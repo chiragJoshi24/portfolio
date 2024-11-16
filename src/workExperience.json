@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Software Developer Intern - GrapplTech",
+        "description": [
+            {
+                "work": "Developed Diverse Front-end Webpage Templates.",
+                "subWork": [
+                    "Created a library of responsive, visually appealing templates aligned with the company's branding and UX guidelines",
+                    "Implemented best practices for accessibility, optimization, and cross-browser compatibility"
+                ]
+            },
+            {
+                "work": "Supported GrapplTech's Mission with High-quality, Optimized Templates.",
+                "subWork": [
+                    "Worked closely with design and product teams to translate requirements into effective template designs.",
+                    "Optimized templates for fast loading times and accessibility.",
+                    "Regularly tested templates across devices and browsers"
+                ]
+            },
+            {
+                "work": "Developed Multiple Templates, Improving Completion Time by 20%.",
+                "subWork": [
+                    "Created a diverse library of reusable templates covering common page types.",
+                    "Implemented a template-based approach to enable faster webpage development.",
+                    "Documented the template library and provided training to the development team."
+                ]
+            }
+        ],
+        "workDuration": "July 2024 - August 2024"
+    },
+    {
+        "name": "Trainee Technical Support - Sony India Private Limited",
+        "description": [
+            {
+                "work": "Provided Technical Support for Over 1,000 Sony India Customers Monthly",
+                "subWork": [
+                    "Addressed a wide range of technical issues related to Sony home appliances, TVs, and audio systems",
+                    "Delivered effective troubleshooting guidance and solutions to customers, leading to a 90%+ resolution rate."
+                ]
+            },
+            {
+                "work": "Collaborated with the Product Team to Offer Real-time Feedback.",
+                "subWork": [
+                    "Identified recurring technical issues based on customer interactions.",
+                    "Provided the product team with proactive feedback to improve product quality.",
+                    "Collaborated on optimizing troubleshooting workflows to enhance the support process."
+                ]
+            },
+            {
+                "work": "Consistently Exceeded Key Performance Indicators (KPIs).",
+                "subWork": [
+                    "Maintained an average resolution time of under 7 minutes per call.",
+                    "Ensured a high first-call resolution rate, minimizing the need for follow-up calls.",
+                    "Exceeded targets for response time, resolution time, and customer satisfaction."
+                ]
+            }
+        ],
+        "workDuration": "September 2024 - October 2024"
+    }
+]

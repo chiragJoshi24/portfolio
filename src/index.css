@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-[4rem];
+        @apply font-bold;
+    }
+    h2 {
+        @apply text-3xl;
+        @apply font-bold;
+    }
+    h3 {
+        @apply text-2xl;
+        @apply font-bold;
+    }
+    h4 {
+        @apply text-xl;
+        @apply font-semibold;
+    }
+    h5 {
+        @apply text-lg;
+        @apply font-semibold;
+    }
+    h6 {
+        @apply text-sm;
+        @apply font-semibold;
+    }
+}
+* {
+    color: white;
+    cursor: none;
+}
+.heroContainer {
+    height: 100vh;
+    background-image: url('./assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me {
+    height: 100vh;
+    background: linear-gradient(0deg, #0d225d, #0e1016);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.preloader-container {
+    background-color: #0e1016;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    animation: rollUp 500ms ease-in forwards;
+    animation-delay: 3s;
+    z-index: 9999;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.no-clicks {
+    pointer-events: none;
+}
+.app-container {
+    background: url('./assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+a:hover {
+    cursor: none;
+}
+@keyframes rollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
