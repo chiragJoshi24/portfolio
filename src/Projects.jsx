@@ -42,7 +42,7 @@ const Projects = () => {
                 description={
                     'The website includes interactive UI elements that enhance user engagement and provide a dynamic experience. It utilizes modern web technologies to ensure smooth, responsive, and efficient performance across devices. The design offers customization options for modifications and scalability.'
                 }
-                liveLink={'https://chiragjoshi24.github.io/Portfolio'}
+                liveLink={'https://chiragjoshi24.github.io/portfolio'}
                 image={Portfolio}
                 sourceCode={'https://github.com/chiragJoshi24/Portfolio'}
                 count={3}
