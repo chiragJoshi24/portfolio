@@ -5,7 +5,7 @@ Welcome to my personal portfolio website! This is where I showcase my projects, 
 ## Live Version
 
 You can view the live version of my portfolio here:  
-[Chirag Joshi Portfolio](https://chiragjoshi24.github.io)
+[Chirag Joshi Portfolio](https://chiragjoshi24.github.io/portfolio)
 
 ## Table of Contents
 
