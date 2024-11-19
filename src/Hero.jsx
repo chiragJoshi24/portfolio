@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className="heroContainer" id="home">
             <FadeIn delay={1.8}>
-                <div className="flex w-full justify-between mt-16 mb-5">
+                <div className="flex w-full justify-between mt-16">
                     <a
                         href="https://drive.google.com/file/d/1Wb_YvOK3b5ftftEKnptR8NA3MqphaJGS/view?usp=sharing"
                         target="_blank"
@@ -68,7 +68,7 @@ const Hero = () => {
                             <u>Grappl.tech</u>
                         </a>
                     </div>
-                    <div className="mr-20 font-medium text-lg w-96 hidden md:inline text-right">
+                    <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
                         Focused on interfaces and experiences, working remotely
                         in India.
                     </div>
