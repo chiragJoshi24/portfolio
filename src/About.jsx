@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Components/Section';
+
 const About = () => {
     return (
         <div
@@ -9,7 +10,6 @@ const About = () => {
             <h1 className=" mt-10 font-black text-[4rem] max-w-7xl text-left leading-tight">
                 I MAKE BEAUTIFUL WEBSITES POWERFUL, AND CONTENT CAPTIVATING.
             </h1>
-
             <div className="flex flex-col md:flex-row justify-between w-full max-w-7xl m-20 ">
                 <div className="w-full md:w-[60%]">
                     <p className="leading-snug font-serif text-2xl mb-8">

@@ -29,19 +29,21 @@ const Blog = () => {
                     }
                 />
                 <BlogCard
-                    title={'Marching Cubes Algorithm'}
+                    title={'Marching Cubes: Insights into 3D Renderings'}
                     source={
-                        'https://chiragjoshi-tech.hashnode.dev/marching-cubes-algorithm'
+                        'https://chiragjoshi-tech.hashnode.dev/marching-cubes-insights-into-3d-renderings'
                     }
                     image={Model}
-                    date={'November 15, 2024'}
+                    date={'November 18, 2024'}
                     text={
-                        "The Marching Cubes algorithm, along with Lewiner's optimizations, revolutionized 3D surface reconstruction in modern computer graphics. This detailed article breaks down its core principles and thoroughly explains how it generates smooth, high-quality surfaces from complex volumetric data."
+                        'The Marching Cubes algorithm, revolutionized 3D surface reconstruction in modern computer graphics. This article breaks down its core principles and thoroughly explains how it generates smooth, high-quality surfaces from complex volumetric data.'
                     }
                 />
                 <BlogCard
                     title={'Exploring U-net Architecture'}
-                    source={''}
+                    source={
+                        'https://chiragjoshi-tech.hashnode.dev/exploring-unet-architecture'
+                    }
                     image={Unet}
                     date={'November 14, 2024'}
                     text={

@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 const Navbar = () => {
     const navItems = [
         { label: 'Home', key: 'home', sectionId: 'home' },
@@ -35,7 +36,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 p-1 bg-[#0A0A0E] rounded-md z-50">
+        <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 p-1 bg-[#0A0A0E] rounded-md z-50 fade-in">
             <ul className="flex justify-center opacity-95 max-w-[80vw]">
                 {navItems.map((item) => (
                     <li key={item.key} className="font-medium">
