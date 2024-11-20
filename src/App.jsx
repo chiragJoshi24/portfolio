@@ -20,6 +20,10 @@ const App = () => {
             <Cursor />
             {!isPreloaderDone ? <Preloader /> : <MainContent />}
         </div>
+        // <>
+        //     <MainContent />
+        //     <Cursor></Cursor>
+        // </>
     );
 };
 

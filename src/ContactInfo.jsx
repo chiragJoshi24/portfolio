@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Form from './Components/Form';
-
+import Glide from './Animations/Glide';
+import GlideAndFadeFromBottom from './Animations/GlideAndFadeFromBottom';
 const ContactInfo = () => {
     const canvasRef = useRef(null);
 
@@ -140,7 +141,7 @@ const ContactInfo = () => {
             window.removeEventListener('resize', resizeReset);
         };
     }, []);
-
+    const mobile = window.innerWidth <= 768;
     return (
         <div className="contact-me" id="contact">
             <canvas
@@ -148,90 +149,130 @@ const ContactInfo = () => {
                 className="absolute w-full h-full top-0 left-0 z-0"
             ></canvas>
             <div className="relative z-10 text-center text-white">
-                <h1 className="text-9xl font-black">LET'S TALK</h1>
+                <Glide visible={mobile ? 0 : 0.5}>
+                    <h1 className="text-9xl font-black">LET'S TALK</h1>
+                </Glide>
 
-                <p className="py-10 text-xl">
-                    Have a proposal, suggestion, want to work together on
-                    something?
-                </p>
-
+                <Glide delay={0.4} visible={mobile ? 0 : 0.5}>
+                    <p className="py-10 text-xl">
+                        Have a proposal, suggestion, want to work together on
+                        something?
+                    </p>
+                </Glide>
                 <div className="flex flex-row justify-between w-[685px] mx-auto mb-10">
                     <div className="w-[380px] max-w-[90%] border-blue-50 rounded-lg border-2 p-10">
                         <Form />
                     </div>
                     <div className="text-left">
-                        <h1 className="text-3xl font-semibold py-2">
-                            My Profiles
-                        </h1>
+                        <Glide
+                            transitionDistance={100}
+                            visible={mobile ? 0 : 0.5}
+                        >
+                            <h1 className="text-3xl font-semibold py-2">
+                                My Profiles
+                            </h1>
+                        </Glide>
 
                         <ul>
-                            <li className="p-3 font-black text-lg">
-                                <a
-                                    href="https://github.com/chiragJoshi24"
-                                    target="_blank"
-                                    className="p-3"
-                                >
-                                    GITHUB
-                                </a>
-                            </li>
-
-                            <li className="p-3 font-black text-lg">
-                                <a
-                                    href="https://www.linkedin.com/in/chirag-joshi-67b464216/"
-                                    target="_blank"
-                                    className="p-3"
-                                >
-                                    LINKEDIN
-                                </a>
-                            </li>
-
-                            <li className="p-3 font-black text-lg">
-                                <a
-                                    href="https://hashnode.com/@chiragj2403"
-                                    target="_blank"
-                                    className="p-3"
-                                >
-                                    HASHNODE
-                                </a>
-                            </li>
-
-                            <li className="p-3 font-black text-lg">
-                                <a
-                                    href="https://leetcode.com/u/chirag45610/"
-                                    target="_blank"
-                                    className="p-3"
-                                >
-                                    LEETCODE
-                                </a>
-                            </li>
-
-                            <li className="p-3 font-black text-lg">
-                                <a
-                                    href="https://x.com/ChiragJ72010984"
-                                    target="_blank"
-                                    className="p-3"
-                                >
-                                    TWITTER
-                                </a>
-                            </li>
-
-                            <li className="p-3 font-black text-lg ">
-                                <a
-                                    href="mailto:chirag45610@gmail.com"
-                                    target="_blank"
-                                    className="p-3"
-                                >
-                                    SEND ME AN EMAIL
-                                </a>
-                            </li>
+                            <Glide
+                                transitionDistance={100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <li className="p-3 font-black text-lg">
+                                    <a
+                                        href="https://github.com/chiragJoshi24"
+                                        target="_blank"
+                                        className="p-3"
+                                    >
+                                        GITHUB
+                                    </a>
+                                </li>
+                            </Glide>
+                            <Glide
+                                transitionDistance={100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <li className="p-3 font-black text-lg">
+                                    <a
+                                        href="https://www.linkedin.com/in/chirag-joshi-67b464216/"
+                                        target="_blank"
+                                        className="p-3"
+                                    >
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                            </Glide>
+                            <Glide
+                                transitionDistance={100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <li className="p-3 font-black text-lg">
+                                    <a
+                                        href="https://hashnode.com/@chiragj2403"
+                                        target="_blank"
+                                        className="p-3"
+                                    >
+                                        HASHNODE
+                                    </a>
+                                </li>
+                            </Glide>
+                            <Glide
+                                transitionDistance={100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <li className="p-3 font-black text-lg">
+                                    <a
+                                        href="https://leetcode.com/u/chirag45610/"
+                                        target="_blank"
+                                        className="p-3"
+                                    >
+                                        LEETCODE
+                                    </a>
+                                </li>
+                            </Glide>
+                            <Glide
+                                transitionDistance={100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <li className="p-3 font-black text-lg">
+                                    <a
+                                        href="https://x.com/ChiragJ72010984"
+                                        target="_blank"
+                                        className="p-3"
+                                    >
+                                        TWITTER
+                                    </a>
+                                </li>
+                            </Glide>
+                            <Glide
+                                transitionDistance={100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <li className="p-3 font-black text-lg ">
+                                    <a
+                                        href="mailto:chirag45610@gmail.com"
+                                        target="_blank"
+                                        className="p-3"
+                                    >
+                                        SEND ME AN EMAIL
+                                    </a>
+                                </li>
+                            </Glide>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div className="absolute bottom-12 flex justify-between w-full font-bold">
-                <div className="ml-16">COPYRIGHT 2024</div>
+                <div className="ml-16">
+                    <GlideAndFadeFromBottom>
+                        COPYRIGHT 2024
+                    </GlideAndFadeFromBottom>
+                </div>
                 <div className="mr-16">
-                    DESIGNED AND CREATED BY CHIRAG JOSHI
+                    <GlideAndFadeFromBottom>
+                        DESIGNED AND CREATED BY CHIRAG JOSHI
+                    </GlideAndFadeFromBottom>
                 </div>
             </div>
         </div>

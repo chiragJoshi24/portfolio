@@ -6,7 +6,6 @@ import Projects from './Projects';
 import Blog from './Blog';
 import WorkExperience from './WorkExperience';
 import ContactInfo from './ContactInfo';
-import FadeIn from './Animations/FadeIn';
 
 const MainContent = () => {
     return (

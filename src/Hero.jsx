@@ -1,12 +1,13 @@
 import React from 'react';
 import passportPhoto from './assets/my-passport-photo.jpg';
-import FadeIn from './Animations/FadeIn';
+import GlideAndFadeFromBottom from './Animations/GlideAndFadeFromBottom';
 import './index.css';
+
 const Hero = () => {
     return (
         <div className="heroContainer" id="home">
-            <FadeIn delay={1.8}>
-                <div className="flex w-full justify-between mt-16">
+            <div className="flex w-full justify-between mt-16">
+                <GlideAndFadeFromBottom delay={1.8}>
                     <a
                         href="https://drive.google.com/file/d/1Wb_YvOK3b5ftftEKnptR8NA3MqphaJGS/view?usp=sharing"
                         target="_blank"
@@ -14,7 +15,10 @@ const Hero = () => {
                     >
                         VIEW RESUME
                     </a>
-                    <div className="flex mr-32">
+                </GlideAndFadeFromBottom>
+
+                <div className="flex mr-32">
+                    <GlideAndFadeFromBottom delay={1.8}>
                         <a
                             href="https://github.com/chiragJoshi24"
                             target="_blank"
@@ -36,30 +40,34 @@ const Hero = () => {
                         >
                             TWITTER
                         </a>
-                    </div>
+                    </GlideAndFadeFromBottom>
                 </div>
-            </FadeIn>
-            <div className="font-serif flex flex-col justify-center text-center items-center text-9xl font-black">
-                <FadeIn delay={1.2}>
-                    Chirag <br /> Joshi
-                </FadeIn>
-                <FadeIn delay={0.6}>
-                    <div className="flex justify-center items-center">
-                        <img
-                            src={passportPhoto}
-                            alt="My Passport Photo"
-                            className="rounded-[27%] max-w-[243px]"
-                            width="243"
-                        />
-                    </div>
-                </FadeIn>
             </div>
 
-            <FadeIn delay={1.8}>
-                <div className="absolute my-20 flex w-full justify-between bottom-0">
-                    <div className="ml-32 font-medium text-lg w-96">
+            <div className="font-serif flex flex-col justify-center text-center h-[70vh] text-9xl font-black">
+                <div className="items-center">
+                    <GlideAndFadeFromBottom delay={1.2}>
+                        Chirag <br /> Joshi
+                    </GlideAndFadeFromBottom>
+
+                    <div className="flex justify-center items-center">
+                        <GlideAndFadeFromBottom delay={0.6}>
+                            <img
+                                src={passportPhoto}
+                                alt="My Passport Photo"
+                                className="rounded-[27%] max-w-[243px]"
+                                width="243"
+                            />
+                        </GlideAndFadeFromBottom>
+                    </div>
+                </div>
+            </div>
+
+            <div className="absolute my-20 flex w-full justify-between bottom-0">
+                <div className="ml-32 font-medium text-lg w-96">
+                    <GlideAndFadeFromBottom delay={1.8}>
                         Full Stack Developer, Product Designer & Ex-Frontend
-                        Intern at{' '}
+                        Intern at
                         <a
                             href="https://www.grappl.tech/"
                             target="_blank"
@@ -67,13 +75,15 @@ const Hero = () => {
                         >
                             <u>Grappl.tech</u>
                         </a>
-                    </div>
-                    <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
+                    </GlideAndFadeFromBottom>
+                </div>
+                <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
+                    <GlideAndFadeFromBottom delay={1.8}>
                         Focused on interfaces and experiences, working remotely
                         in India.
-                    </div>
+                    </GlideAndFadeFromBottom>
                 </div>
-            </FadeIn>
+            </div>
         </div>
     );
 };

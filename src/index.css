@@ -136,3 +136,10 @@ a:hover {
         transform: translateY(-100%);
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+        transform: scale(2);
+        transform-origin: top left;
+        width: 50%;
+    }
+}
