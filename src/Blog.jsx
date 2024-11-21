@@ -8,7 +8,7 @@ import Unet from './assets/Unet.jpg';
 
 const Blog = () => {
     return (
-        <div className="bg-[#0e1016] pb-24" id="blog w-full">
+        <div className="bg-[#0e1016] pb-24 w-full" id="blog">
             <h1 className="font-black text-[4rem] leading-tight py-14 text-center">
                 <HeadingAnimation> BLOGS AND ARTICLES </HeadingAnimation>
             </h1>
