@@ -15,7 +15,6 @@ const Blog = () => {
             <div className="py-10">
                 <p className="font-serif text-2xl mt-2 text-center">
                     <HeadingAnimation delay={0.03}>
-                        {' '}
                         I write articles to reinforce my knowledge and help out
                         others who might be building something similar!
                     </HeadingAnimation>

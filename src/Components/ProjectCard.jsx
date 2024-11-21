@@ -48,7 +48,7 @@ const ProjectCard = ({
                 >
                     <img src={image} alt={name} className="rounded-lg" />
                 </div>
-                <div className="leading-snug font-serif text-xl px-6 md:px-12 lg:px-16">
+                <div className="font-serif text-xl px-6 md:px-12 lg:px-16">
                     <p>
                         <HeadingAnimation delay={0.01}>
                             {description}
