@@ -1,13 +1,13 @@
 import React from 'react';
 import passportPhoto from './assets/my-passport-photo.jpg';
-import GlideAndFadeFromBottom from './Animations/GlideAndFadeFromBottom';
+import GlideY from './Animations/GlideY';
 import './index.css';
 
 const Hero = () => {
     return (
         <div className="heroContainer" id="home">
             <div className="flex w-full justify-between mt-16">
-                <GlideAndFadeFromBottom delay={1.8}>
+                <GlideY delay={1.8}>
                     <a
                         href="https://drive.google.com/file/d/1Wb_YvOK3b5ftftEKnptR8NA3MqphaJGS/view?usp=sharing"
                         target="_blank"
@@ -15,10 +15,10 @@ const Hero = () => {
                     >
                         VIEW RESUME
                     </a>
-                </GlideAndFadeFromBottom>
+                </GlideY>
 
                 <div className="flex mr-32">
-                    <GlideAndFadeFromBottom delay={1.8}>
+                    <GlideY delay={1.8}>
                         <a
                             href="https://github.com/chiragJoshi24"
                             target="_blank"
@@ -40,32 +40,32 @@ const Hero = () => {
                         >
                             TWITTER
                         </a>
-                    </GlideAndFadeFromBottom>
+                    </GlideY>
                 </div>
             </div>
 
             <div className="font-serif flex flex-col justify-center text-center h-[70vh] text-9xl font-black">
                 <div className="items-center">
-                    <GlideAndFadeFromBottom delay={1.2}>
+                    <GlideY delay={1.2}>
                         Chirag <br /> Joshi
-                    </GlideAndFadeFromBottom>
+                    </GlideY>
 
                     <div className="flex justify-center items-center">
-                        <GlideAndFadeFromBottom delay={0.6}>
+                        <GlideY delay={0.6}>
                             <img
                                 src={passportPhoto}
                                 alt="My Passport Photo"
                                 className="rounded-[27%] max-w-[243px]"
                                 width="243"
                             />
-                        </GlideAndFadeFromBottom>
+                        </GlideY>
                     </div>
                 </div>
             </div>
 
             <div className="absolute my-20 flex w-full justify-between bottom-0">
                 <div className="ml-32 font-medium text-lg w-96">
-                    <GlideAndFadeFromBottom delay={1.8}>
+                    <GlideY delay={1.8}>
                         Full Stack Developer, Product Designer & Ex-Frontend
                         Intern at
                         <a
@@ -75,13 +75,13 @@ const Hero = () => {
                         >
                             <u>Grappl.tech</u>
                         </a>
-                    </GlideAndFadeFromBottom>
+                    </GlideY>
                 </div>
                 <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
-                    <GlideAndFadeFromBottom delay={1.8}>
+                    <GlideY delay={1.8}>
                         Focused on interfaces and experiences, working remotely
                         in India.
-                    </GlideAndFadeFromBottom>
+                    </GlideY>
                 </div>
             </div>
         </div>

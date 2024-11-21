@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Components/Section';
+import HeadingAnimation from './Animations/HeadingAnimation';
 
 const About = () => {
     return (
@@ -8,45 +9,65 @@ const About = () => {
             id="about"
         >
             <h1 className=" mt-10 font-black text-[4rem] max-w-7xl text-left leading-tight">
-                I MAKE BEAUTIFUL WEBSITES POWERFUL, AND CONTENT CAPTIVATING.
+                <HeadingAnimation>
+                    I MAKE BEAUTIFUL WEBSITES POWERFUL, AND CONTENT CAPTIVATING.
+                </HeadingAnimation>
             </h1>
             <div className="flex flex-col md:flex-row justify-between w-full max-w-7xl m-20 ">
                 <div className="w-full md:w-[60%]">
                     <p className="leading-snug font-serif text-2xl mb-8">
-                        I'm a passionate developer and designer, graduated in
-                        July 2024 with a Bachelor's degree in Computer Science
-                        and Engineering. My journey in the world of software
-                        development is driven by a desire to create solutions
-                        that solve real-world problems. I'm an effective
-                        communicator and team player, adept at collaborating
-                        with multidisciplinary teams to achieve project goals.
+                        <HeadingAnimation delay={0.03}>
+                            I'm a passionate developer and designer, graduated
+                            in July 2024 with a Bachelor's degree in Computer
+                            Science and Engineering. My journey in the world of
+                            software development is driven by a desire to create
+                            solutions that solve real-world problems. I'm an
+                            effective communicator and team player, adept at
+                            collaborating with multidisciplinary teams to
+                            achieve project goals.
+                        </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
-                        I have previously worked on{' '}
+                        <HeadingAnimation>
+                            I have previously worked on
+                        </HeadingAnimation>{' '}
                         <span className="text-[#FACC15] font-bold">
-                            Web Development and Machine Learning.
+                            <HeadingAnimation>
+                                Web Development and Machine Learning.
+                            </HeadingAnimation>
                         </span>{' '}
-                        I am enthusiastic about and regularly read up on{' '}
+                        <HeadingAnimation>
+                            I am enthusiastic about and regularly read up on
+                        </HeadingAnimation>{' '}
                         <span className="text-[#FACC15] font-bold">
-                            Neural Network
+                            <HeadingAnimation>Neural Network</HeadingAnimation>
                         </span>{' '}
-                        research.
+                        <HeadingAnimation>research.</HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
-                        Currently, I'm working on exciting projects that I can't
-                        wait to share. I thrive on challenges and am always open
-                        to new opportunities and collaborations.
+                        <HeadingAnimation delay={0.03}>
+                            Currently, I'm working on exciting projects that I
+                            can't wait to share. I thrive on challenges and am
+                            always open to new opportunities and collaborations.
+                        </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
-                        I possess a solid understanding of core programming
-                        principles and algorithms, with practical experience
-                        through internships.
+                        <HeadingAnimation>
+                            I possess a solid understanding of core programming
+                            principles and algorithms, with practical experience
+                            through internships.
+                        </HeadingAnimation>
                     </p>
 
                     <p className="leading-snug font-serif text-2xl mb-8">
-                        In addition to Software Developer, I am also a{' '}
+                        <HeadingAnimation>
+                            In addition to Software Developer, I am also a
+                        </HeadingAnimation>{' '}
                         <span className="text-[#FACC15] font-bold">
-                            Musician, Competitive Coder & a Basketball player.
+                            <HeadingAnimation>
+                                Musician, Competitive Coder & a Basketball
+                                player.
+                            </HeadingAnimation>
                         </span>{' '}
                     </p>
                 </div>

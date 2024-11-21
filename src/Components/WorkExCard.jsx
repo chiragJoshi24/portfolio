@@ -1,20 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Glide from '../Animations/Glide';
 
 const WorkExCard = ({ name, workDuration, description }) => {
     return (
-        <div className=" bg-[#1a1d23] w-full sm:w-96 md:w-[500px] lg:w-[700px] xl:w-[900px] my-8 p-16 rounded-lg border-white border-2">
-            <h2 className="text-3xl font-semibold text-white mb-2">{name}</h2>
-            <p className="text-base text-gray-400 mb-4">{workDuration}</p>
+        <div className=" bg-[#1a1d23] w-[1100px] max-w-[85%] my-8 p-16 rounded-lg border-white border-2">
+            <h2 className="text-3xl font-semibold text-white mb-2">
+                <Glide visible={0} transitionDistance={-150} time={0.5}>
+                    {name}
+                </Glide>
+            </h2>
+            <p className="text-base text-gray-400 mb-4">
+                <Glide visible={0} transitionDistance={-150} time={0.5}>
+                    {workDuration}
+                </Glide>
+            </p>
             {description.map((item, index) => (
                 <div key={index} className="mb-4">
                     <h3 className="text-2xl font-medium text-white">
-                        {item.work}
+                        <Glide visible={0} transitionDistance={-150} time={0.5}>
+                            {item.work}
+                        </Glide>
                     </h3>
                     <ul className="list-disc pl-5 text-gray-300">
                         {item.subWork.map((subItem, subIndex) => (
-                            <li key={subIndex} className="text-base">
-                                {subItem}
+                            <li key={subIndex} className="text-lg">
+                                <Glide
+                                    visible={0}
+                                    transitionDistance={-150}
+                                    time={0.5}
+                                >
+                                    {subItem}
+                                </Glide>
                             </li>
                         ))}
                     </ul>
@@ -26,6 +43,6 @@ const WorkExCard = ({ name, workDuration, description }) => {
 WorkExCard.propTypes = {
     name: PropTypes.string.isRequired,
     workDuration: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.array.isRequired,
 };
 export default WorkExCard;

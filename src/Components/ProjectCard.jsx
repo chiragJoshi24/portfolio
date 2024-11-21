@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import HeadingAnimation from '../Animations/HeadingAnimation';
+
 const ProjectCard = ({
     name,
     liveLink,
@@ -10,9 +12,11 @@ const ProjectCard = ({
     count,
 }) => {
     return (
-        <div className="bg-[#1a1d23] flex flex-col my-8 w-full sm:w-96 md:w-[500px] lg:w-[700px] xl:w-[900px] xl:h-[450px] rounded-xl border-2 border-blue-50">
+        <div className="bg-[#1a1d23] flex flex-col my-8 w-[1100px] max-w-[85%] rounded-xl border-2 border-blue-50">
             <div className="flex flex-row mt-12 mb-8 justify-between items-center">
-                <div className="text-4xl font-black ml-16">{name}</div>
+                <div className="text-4xl font-black ml-16">
+                    <HeadingAnimation>{name}</HeadingAnimation>
+                </div>
 
                 <div className="mr-16 flex space-x-8">
                     <a
@@ -45,12 +49,16 @@ const ProjectCard = ({
                     <img src={image} alt={name} className="rounded-lg" />
                 </div>
                 <div className="leading-snug font-serif text-xl px-6 md:px-12 lg:px-16">
-                    <p>{description}</p>
+                    <p>
+                        <HeadingAnimation delay={0.01}>
+                            {description}
+                        </HeadingAnimation>
+                    </p>
 
                     <p
                         className={`my-8 font-serif text-lg font-semibold ${count % 2 === 0 ? 'text-left ' : 'text-right '}`}
                     >
-                        {techStack}
+                        <HeadingAnimation>{techStack}</HeadingAnimation>
                     </p>
                 </div>
             </div>
@@ -63,8 +71,8 @@ ProjectCard.propTypes = {
     liveLink: PropTypes.string,
     sourceCode: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    techStack: PropTypes.string,
-    image: PropTypes.string,
+    techStack: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     count: PropTypes.number.isRequired,
 };
 

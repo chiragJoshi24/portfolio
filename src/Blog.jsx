@@ -1,6 +1,6 @@
 import React from 'react';
 import Glide from './Animations/Glide';
-import GlideAndFadeFromBottom from './Animations/GlideAndFadeFromBottom';
+import HeadingAnimation from './Animations/HeadingAnimation';
 import BlogCard from './Components/BlogCard';
 import LLM from './assets/llm.webp';
 import Model from './assets/Marchingcubes.png';
@@ -9,18 +9,17 @@ import Unet from './assets/Unet.jpg';
 const Blog = () => {
     return (
         <div className="bg-[#0e1016] pb-24" id="blog w-full">
-            <GlideAndFadeFromBottom transitionDistance={-100} time={1.5}>
-                <h1 className="font-black text-[4rem] leading-tight py-14 text-center">
-                    BLOGS AND ARTICLES
-                </h1>
-            </GlideAndFadeFromBottom>
+            <h1 className="font-black text-[4rem] leading-tight py-14 text-center">
+                <HeadingAnimation> BLOGS AND ARTICLES </HeadingAnimation>
+            </h1>
             <div className="py-10">
-                <GlideAndFadeFromBottom transitionDistance={-200} time={1}>
-                    <p className="font-serif text-2xl mt-2 text-center">
+                <p className="font-serif text-2xl mt-2 text-center">
+                    <HeadingAnimation delay={0.03}>
+                        {' '}
                         I write articles to reinforce my knowledge and help out
                         others who might be building something similar!
-                    </p>
-                </GlideAndFadeFromBottom>
+                    </HeadingAnimation>
+                </p>
             </div>
             <div className="flex flex-col lg:flex-row justify-center items-center lg:w-full min-w-96">
                 <Glide

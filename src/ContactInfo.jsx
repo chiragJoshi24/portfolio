@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import Form from './Components/Form';
 import Glide from './Animations/Glide';
-import GlideAndFadeFromBottom from './Animations/GlideAndFadeFromBottom';
+import GlideY from './Animations/GlideY';
+
 const ContactInfo = () => {
     const canvasRef = useRef(null);
 
@@ -265,14 +266,10 @@ const ContactInfo = () => {
 
             <div className="absolute bottom-12 flex justify-between w-full font-bold">
                 <div className="ml-16">
-                    <GlideAndFadeFromBottom>
-                        COPYRIGHT 2024
-                    </GlideAndFadeFromBottom>
+                    <GlideY>COPYRIGHT 2024</GlideY>
                 </div>
                 <div className="mr-16">
-                    <GlideAndFadeFromBottom>
-                        DESIGNED AND CREATED BY CHIRAG JOSHI
-                    </GlideAndFadeFromBottom>
+                    <GlideY>DESIGNED AND CREATED BY CHIRAG JOSHI</GlideY>
                 </div>
             </div>
         </div>

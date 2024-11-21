@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const GlideAndFadeFromBottom = ({
+const GlideY = ({
     children,
     delay = 0,
     transitionDistance = 30,
@@ -27,4 +27,4 @@ const GlideAndFadeFromBottom = ({
     );
 };
 
-export default GlideAndFadeFromBottom;
+export default GlideY;
