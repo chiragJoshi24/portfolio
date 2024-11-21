@@ -142,7 +142,7 @@ const ContactInfo = () => {
             window.removeEventListener('resize', resizeReset);
         };
     }, []);
-    const mobile = window.innerWidth <= 768;
+    const mobile = window.innerWidth <= 1024;
     return (
         <div className="contact-me" id="contact">
             <canvas
@@ -150,11 +150,11 @@ const ContactInfo = () => {
                 className="absolute w-full h-full top-0 left-0 z-0"
             ></canvas>
             <div className="relative z-10 text-center text-white">
-                <Glide visible={mobile ? 0 : 0.5}>
+                <Glide visible={mobile ? 0 : 0.5} transitionDistance={mobile ? -100 :100}>
                     <h1 className="text-9xl font-black">LET'S TALK</h1>
                 </Glide>
 
-                <Glide delay={0.4} visible={mobile ? 0 : 0.5}>
+                <Glide delay={0.4} visible={mobile ? 0 : 0.5} transitionDistance={mobile ? -100 :100}>
                     <p className="py-10 text-xl">
                         Have a proposal, suggestion, want to work together on
                         something?
@@ -166,7 +166,7 @@ const ContactInfo = () => {
                     </div>
                     <div className="text-left">
                         <Glide
-                            transitionDistance={100}
+                            transitionDistance={mobile ? -100 :100}
                             visible={mobile ? 0 : 0.5}
                         >
                             <h1 className="text-3xl font-semibold py-2">
@@ -176,7 +176,7 @@ const ContactInfo = () => {
 
                         <ul>
                             <Glide
-                                transitionDistance={100}
+                                transitionDistance={mobile ? -100 :100}
                                 visible={mobile ? 0 : 0.5}
                             >
                                 <li className="p-3 font-black text-lg">
@@ -190,7 +190,7 @@ const ContactInfo = () => {
                                 </li>
                             </Glide>
                             <Glide
-                                transitionDistance={100}
+                                transitionDistance={mobile ? -100 :100}
                                 visible={mobile ? 0 : 0.5}
                             >
                                 <li className="p-3 font-black text-lg">
@@ -204,7 +204,7 @@ const ContactInfo = () => {
                                 </li>
                             </Glide>
                             <Glide
-                                transitionDistance={100}
+                                transitionDistance={mobile ? -100 :100}
                                 visible={mobile ? 0 : 0.5}
                             >
                                 <li className="p-3 font-black text-lg">
@@ -218,7 +218,7 @@ const ContactInfo = () => {
                                 </li>
                             </Glide>
                             <Glide
-                                transitionDistance={100}
+                                transitionDistance={mobile ? -100 :100}
                                 visible={mobile ? 0 : 0.5}
                             >
                                 <li className="p-3 font-black text-lg">
@@ -232,7 +232,7 @@ const ContactInfo = () => {
                                 </li>
                             </Glide>
                             <Glide
-                                transitionDistance={100}
+                                transitionDistance={mobile ? -100 :100}
                                 visible={mobile ? 0 : 0.5}
                             >
                                 <li className="p-3 font-black text-lg">
@@ -246,7 +246,7 @@ const ContactInfo = () => {
                                 </li>
                             </Glide>
                             <Glide
-                                transitionDistance={100}
+                                transitionDistance={mobile ? -100 :100}
                                 visible={mobile ? 0 : 0.5}
                             >
                                 <li className="p-3 font-black text-lg ">

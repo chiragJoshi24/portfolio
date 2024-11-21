@@ -7,6 +7,7 @@ import Model from './assets/Marchingcubes.png';
 import Unet from './assets/Unet.jpg';
 
 const Blog = () => {
+    const mobile = window.innerWidth <= 1024;
     return (
         <div className="bg-[#0e1016] pb-24 w-full" id="blog">
             <h1 className="font-black text-[4rem] leading-tight py-14 text-center">
@@ -25,7 +26,7 @@ const Blog = () => {
                     delay={0.6}
                     visible={0.5}
                     time={0.5}
-                    transitionDistance={300}
+                    transitionDistance={mobile ? -100 :100}
                 >
                     <BlogCard
                         title={'The Science behind LLMs'}
@@ -43,7 +44,7 @@ const Blog = () => {
                     delay={0.3}
                     visible={0.5}
                     time={0.5}
-                    transitionDistance={300}
+                    transitionDistance={mobile ? -100 :100}
                 >
                     <BlogCard
                         title={'Marching Cubes: Insights into 3D Renderings'}
@@ -57,7 +58,7 @@ const Blog = () => {
                         }
                     />
                 </Glide>
-                <Glide visible={0.5} time={0.5} transitionDistance={150}>
+                <Glide visible={0.5} time={0.5} transitionDistance={mobile ? -100 :100}>
                     <BlogCard
                         title={'Exploring U-net Architecture'}
                         source={
