@@ -1,8 +1,11 @@
 import React from 'react';
 import WorkExCard from './Components/WorkExCard';
 import data from './workExperience.json';
+import grappl from '/grapplTechLogo.png';
+import sony from '/sonyIndiaLogo.png';
 
 const WorkExperience = () => {
+    const images = [grappl, sony];
     return (
         <div
             className="bg-[#0E1016] flex flex-col justify-center items-center pb-32"
@@ -17,6 +20,7 @@ const WorkExperience = () => {
                     name={item.name}
                     workDuration={item.workDuration}
                     description={item.description}
+                    image={images[index % images.length]}
                 />
             ))}
         </div>

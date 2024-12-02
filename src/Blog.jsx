@@ -65,7 +65,7 @@ const Blog = () => {
                             'https://chiragjoshi-tech.hashnode.dev/exploring-unet-architecture'
                         }
                         image={Unet}
-                        date={'November 14, 2024'}
+                        date={'December 4, 2024'}
                         text={
                             'U-Net architecture is a powerful convolutional neural network widely used for image segmentation tasks. Originally designed for biomedical applications, its symmetric structure and skip connections allow for precise localization, making it optimal for fine-grained segmentation.'
                         }

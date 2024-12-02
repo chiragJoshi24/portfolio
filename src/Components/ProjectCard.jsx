@@ -50,7 +50,7 @@ const ProjectCard = ({
                 </div>
                 <div className="font-serif text-xl px-6 md:px-12 lg:px-16">
                     <p>
-                        <HeadingAnimation delay={0.01}>
+                        <HeadingAnimation delay={0.02}>
                             {description}
                         </HeadingAnimation>
                     </p>
