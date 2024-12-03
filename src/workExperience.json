@@ -1,0 +1,61 @@
+[
+    {
+        "name": "Software Developer Intern - GrapplTech",
+        "description": [
+            {
+                "work": "Developed Diverse Front-end Webpage Templates.",
+                "subWork": [
+                    "Created a library of responsive, visually appealing templates aligned with the company's branding and UX guidelines",
+                    "Implemented best practices for accessibility, optimization, and cross-browser compatibility"
+                ]
+            },
+            {
+                "work": "Supported GrapplTech's Mission with High-quality, Optimized Templates.",
+                "subWork": [
+                    "Worked closely with design and product teams to translate requirements into effective template designs.",
+                    "Optimized templates for fast loading times and accessibility.",
+                    "Regularly tested templates across devices and browsers"
+                ]
+            },
+            {
+                "work": "Developed Multiple Templates, Improving Completion Time by 20%.",
+                "subWork": [
+                    "Created a diverse library of reusable templates covering common page types.",
+                    "Implemented a template-based approach to enable faster webpage development.",
+                    "Documented the template library and provided training to the development team."
+                ]
+            }
+        ],
+        "workDuration": "July 2024 - August 2024"
+    },
+    {
+        "name": "Trainee Technical Support - Sony India Private Limited",
+        "workDuration": "September 2024 - October 2024",
+        "description": [
+            {
+                "work": "Provided Technical Support for Over 1,000 Sony India Customers Monthly",
+                "subWork": [
+                    "Resolved a wide range of technical issues for Sony appliances, TVs, and audio systems, ensuring effective resolutions.",
+                    "Provided clear troubleshooting guidance, achieving a 90%+ issue resolution rate and high customer satisfaction.",
+                    "Handled high volumes of support queries while maintaining quality and professionalism."
+                ]
+            },
+            {
+                "work": "Collaborated with the Product Team to Offer Real-time Feedback",
+                "subWork": [
+                    "Identified recurring technical issues from customer interactions and shared actionable insights with the product team.",
+                    "Provided feedback to improve product quality and helped refine troubleshooting workflows for better efficiency.",
+                    "Participated in cross-functional meetings to align support strategies with product updates."
+                ]
+            },
+            {
+                "work": "Consistently Exceeded Key Performance Indicators (KPIs)",
+                "subWork": [
+                    "Maintained an average resolution time of under 7 minutes by using efficient diagnostic methods.",
+                    "Achieved high first-call resolution rates, minimizing the need for follow-ups and boosting customer satisfaction.",
+                    "Consistently surpassed targets for response times, resolution times, and satisfaction scores."
+                ]
+            }
+        ]
+    }
+]

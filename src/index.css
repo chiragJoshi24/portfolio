@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-[4rem];
+        @apply font-bold;
+    }
+    h2 {
+        @apply text-3xl;
+        @apply font-bold;
+    }
+    h3 {
+        @apply text-2xl;
+        @apply font-bold;
+    }
+    h4 {
+        @apply text-xl;
+        @apply font-semibold;
+    }
+    h5 {
+        @apply text-lg;
+        @apply font-semibold;
+    }
+    h6 {
+        @apply text-sm;
+        @apply font-semibold;
+    }
+}
+* {
+    color: white;
+    cursor: none;
+}
+.heroContainer {
+    height: 100vh;
+    background-image: url('./assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me {
+    height: 100vh;
+    background: linear-gradient(0deg, #0d225d, #0e1016);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.preloader-container {
+    background-color: #0e1016;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    animation: rollUp 500ms ease-in forwards;
+    animation-delay: 3s;
+    z-index: 9999;
+}
+.preloader-animation {
+    display: inline-block;
+    position: relative;
+    font-size: 24px; 
+    white-space: nowrap;
+}
+
+.preloader-animation span {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-120%);
+    animation: fly-in 1s ease-out forwards;
+}
+
+.preloader-animation span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.preloader-animation span:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.preloader-animation span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.preloader-animation span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.preloader-animation span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+.no-clicks {
+    pointer-events: none;
+}
+.app-container {
+    background: url('./assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+a:hover {
+    cursor: none;
+}
+@keyframes rollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        transform: scale(2);
+        transform-origin: top left;
+        width: 50%;
+    }
+}
+@keyframes glideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
