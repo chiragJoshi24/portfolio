@@ -3,7 +3,7 @@ import WorkExCard from './Components/WorkExCard';
 import data from './workExperience.json';
 import grappl from '/grapplTechLogo.png';
 import sony from '/sonyIndiaLogo.png';
-
+import HeadingAnimation from './Animations/HeadingAnimation';
 const WorkExperience = () => {
     const images = [grappl, sony];
     return (
@@ -12,7 +12,7 @@ const WorkExperience = () => {
             id="work"
         >
             <h1 className="font-black text-[4rem] max-w-7xl text-left leading-tight py-14">
-                WORK EXPERIENCE
+                <HeadingAnimation>WORK EXPERIENCE</HeadingAnimation>
             </h1>
             {data.map((item, index) => (
                 <WorkExCard

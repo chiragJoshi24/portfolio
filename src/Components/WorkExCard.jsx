@@ -2,12 +2,12 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
-import Glide from '../Animations/Glide';
 
 const WorkExCard = ({ name, workDuration, description, image }) => {
     const { ref, inView } = useInView({
         threshold: 1,
-        triggerOnce: true
+        triggerOnce: true,
+        rootMargin: '0px 0px -150px 0px',
     });
 
     return (

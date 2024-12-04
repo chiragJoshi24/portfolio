@@ -11,6 +11,7 @@ const HeadingAnimation = ({
     const { ref, inView } = useInView({
         threshold: `${visible}`,
         triggerOnce: true,
+        rootMargin: '0px 0px -50px 0px',
     });
 
     const splitText = (text) => {

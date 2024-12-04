@@ -7,10 +7,12 @@ const Glide = ({
     visible = 1,
     time = 1,
     transitionDistance = 150,
+    rootMarg = 0,
 }) => {
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: visible,
+        rootMargin: `0px 0px ${rootMarg}px 0px`,
     });
 
     const animation = {
