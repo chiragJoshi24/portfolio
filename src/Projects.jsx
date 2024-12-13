@@ -15,6 +15,7 @@ const Projects = () => {
             <h1 className="font-black text-[4rem] w-full leading-tight py-14 text-center">
                 <HeadingAnimation>PROJECTS</HeadingAnimation>
             </h1>
+            <div className='flex flex-wrap justify-center gap-8 max-w-[90%] bg-[#0E1016] overflow-hidden'>
             <ProjectCard
                 name={'Personalized ChatGPT'}
                 techStack={'Python\u00A0 OpenAI'}
@@ -48,6 +49,7 @@ const Projects = () => {
                 sourceCode={'https://github.com/chiragJoshi24/Portfolio'}
                 count={3}
             />
+            </div>
         </div>
     );
 };
