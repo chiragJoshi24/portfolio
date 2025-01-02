@@ -22,7 +22,7 @@ const Projects = () => {
                 description={
                     "This project implements a command-line chatbot for question answering. It leverages FAISS for context retrieval and OpenAI's language model for generating responses. Users can input questions via the command line, and the chatbot provides answers based on pre-defined context stored in a text file."
                 }
-                // liveLink={'https://chiragjoshi24.github.io/PersonalChatGPT'}
+                liveLink={'https://personalgpt-3cv0.onrender.com/'}
                 image={OpenAI}
                 sourceCode={'https://github.com/chiragJoshi24/PersonalChatGPT'}
                 count={1}
