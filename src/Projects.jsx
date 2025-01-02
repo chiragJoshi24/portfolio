@@ -18,9 +18,9 @@ const Projects = () => {
             <div className='flex flex-wrap justify-center gap-8 max-w-[90%] bg-[#0E1016] overflow-hidden'>
             <ProjectCard
                 name={'Personalized ChatGPT'}
-                techStack={'Python\u00A0 OpenAI'}
+                techStack={'Flask\u00A0 Firebase\u00A0 React\u00A0 TailwindCSS'}
                 description={
-                    "This project implements a command-line chatbot for question answering. It leverages FAISS for context retrieval and OpenAI's language model for generating responses. Users can input questions via the command line, and the chatbot provides answers based on pre-defined context stored in a text file."
+                    "This project features a chatbot designed for question answering, utilizing Cohere and Google Gemini APIs for context retrieval and response generation. The backend is developed with the Python Flask framework and is deployed on Render.com. Firebase is integrated to handle user authentication securely."
                 }
                 liveLink={'https://personalgpt-3cv0.onrender.com/'}
                 image={OpenAI}
