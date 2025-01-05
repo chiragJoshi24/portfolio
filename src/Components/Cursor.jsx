@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import useBlobity from 'blobity/lib/react/useBlobity';
 
 const Cursor = () => {

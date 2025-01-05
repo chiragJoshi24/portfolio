@@ -1,5 +1,3 @@
-import React from 'react';
-import 'prop-types';
 import ProjectCard from './Components/ProjectCard';
 import OpenAI from './assets/NeuralNet.jpeg';
 import Nifti from './assets/niftito3d.png';
@@ -28,17 +26,6 @@ const Projects = () => {
                 count={1}
             />
             <ProjectCard
-                name={'NIfTI To 3D Converter'}
-                techStack={'Python\u00A0 U-net\u00A0 MatPlotlib\u00A0 Numpy'}
-                description={
-                    'Reconstructed 3D organ and tissue images from 2D medical data using U-Net with custom preprocessing and augmentation. Created tools for 3D volume reconstruction, mesh generation, and STL export of segmented organs. Developed an end-to-end medical imaging pipeline for 3D CT scan processing, segmentation, and visualization.'
-                }
-                // liveLink={'https://chiragjoshi24.github.io/Nifti-to-3D'}
-                image={Nifti}
-                sourceCode={'https://github.com/chiragJoshi24/Nifti-to-3D'}
-                count={2}
-            />
-            <ProjectCard
                 name={'Portfolio Website'}
                 techStack={'HTML\u00A0 TailwindCSS\u00A0 ReactJS'}
                 description={
@@ -47,6 +34,17 @@ const Projects = () => {
                 liveLink={'https://chiragjoshi24.github.io/portfolio'}
                 image={Portfolio}
                 sourceCode={'https://github.com/chiragJoshi24/Portfolio'}
+                count={2}
+            />
+            <ProjectCard
+                name={'NIfTI To 3D Converter'}
+                techStack={'Python\u00A0 U-net\u00A0 MatPlotlib\u00A0 Numpy'}
+                description={
+                    'Reconstructed 3D organ and tissue images from 2D medical data using U-Net with custom preprocessing and augmentation. Created tools for 3D volume reconstruction, mesh generation, and STL export of segmented organs. Developed an end-to-end medical imaging pipeline for 3D CT scan processing, segmentation, and visualization.'
+                }
+                // liveLink={'https://chiragjoshi24.github.io/Nifti-to-3D'}
+                image={Nifti}
+                sourceCode={'https://github.com/chiragJoshi24/Nifti-to-3D'}
                 count={3}
             />
             </div>

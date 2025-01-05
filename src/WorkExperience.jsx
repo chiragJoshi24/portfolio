@@ -1,4 +1,3 @@
-import React from 'react';
 import WorkExCard from './Components/WorkExCard';
 import data from './workExperience.json';
 import grappl from '/grapplTechLogo.png';

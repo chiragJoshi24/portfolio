@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { useInView } from 'react-intersection-observer';
 
 const Glide = ({
@@ -29,6 +29,14 @@ const Glide = ({
             {children}
         </div>
     );
+};
+Glide.propTypes = {
+    children: PropTypes.element,
+    delay: PropTypes.number,
+    visible: PropTypes.number,
+    time: PropTypes.number,
+    transitionDistance: PropTypes.number,
+    rootMarg: PropTypes.number,
 };
 
 export default Glide;

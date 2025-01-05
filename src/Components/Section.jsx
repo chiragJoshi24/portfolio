@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import HeadingAnimation from '../Animations/HeadingAnimation';
 
 const Section = ({ title, content }) => (
@@ -11,5 +11,8 @@ const Section = ({ title, content }) => (
         </p>
     </div>
 );
-
+Section.propTypes = {
+    title: PropTypes.string,
+    content: PropTypes.string,
+};
 export default Section;

@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { useInView } from 'react-intersection-observer';
 import '../index.css';
 
@@ -37,5 +37,10 @@ const HeadingAnimation = ({
         </div>
     );
 };
-
+HeadingAnimation.propTypes = {
+    children: PropTypes.element,
+    delay: PropTypes.number,
+    time: PropTypes.number,
+    visible: PropTypes.number,
+};
 export default HeadingAnimation;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Form from './Components/Form';
 import Glide from './Animations/Glide';
 import GlideY from './Animations/GlideY';
@@ -154,7 +154,7 @@ const ContactInfo = () => {
                     visible={mobile ? 0 : 0.5}
                     transitionDistance={mobile ? -100 : 100}
                 >
-                    <h1 className="text-9xl font-black">LET'S TALK</h1>
+                    <h1 className="text-9xl font-black">LET&apos;S TALK</h1>
                 </Glide>
 
                 <Glide

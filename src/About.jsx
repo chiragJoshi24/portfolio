@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from './Components/Section';
 import HeadingAnimation from './Animations/HeadingAnimation';
 
@@ -17,14 +16,14 @@ const About = () => {
                 <div className="w-full md:w-[60%]">
                     <p className="leading-snug font-serif text-2xl mb-8">
                         <HeadingAnimation delay={0.03}>
-                            I'm a passionate developer and designer, graduated
-                            in July 2024 with a Bachelor's degree in Computer
-                            Science and Engineering. My journey in the world of
-                            software development is driven by a desire to create
-                            solutions that solve real-world problems. I'm an
-                            effective communicator and team player, adept at
-                            collaborating with multidisciplinary teams to
-                            achieve project goals.
+                            I&apos;m a passionate developer and designer,
+                            graduated in July 2024 with a Bachelor&apos;s degree
+                            in Computer Science and Engineering. My journey in
+                            the world of software development is driven by a
+                            desire to create solutions that solve real-world
+                            problems. I&apos;m an effective communicator and
+                            team player, adept at collaborating with
+                            multidisciplinary teams to achieve project goals.
                         </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
@@ -46,9 +45,10 @@ const About = () => {
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
                         <HeadingAnimation delay={0.03}>
-                            Currently, I'm working on exciting projects that I
-                            can't wait to share. I thrive on challenges and am
-                            always open to new opportunities and collaborations.
+                            Currently, I&apos;m working on exciting projects
+                            that I can&apos;t wait to share. I thrive on
+                            challenges and am always open to new opportunities
+                            and collaborations.
                         </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
@@ -85,12 +85,12 @@ const About = () => {
 
                     <Section
                         title="Languages"
-                        content="C, C++, Python, JavaScript, MySQL, GraphQL"
+                        content="C, C++, Python, JavaScript"
                     />
 
                     <Section
                         title="Other Tools and Technologies"
-                        content="Git, GitHub, Linux, Microsoft Office Suite."
+                        content="Git, GitHub, MySQL, GraphQL, Linux, Microsoft Office Suite."
                     />
                 </div>
             </div>

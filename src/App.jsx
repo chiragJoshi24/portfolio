@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import MainContent from './MainContent';
 import Preloader from './Preloader';
 import Cursor from './Components/Cursor';

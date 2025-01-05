@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Form = () => {
@@ -7,7 +6,7 @@ const Form = () => {
     if (state.succeeded) {
         return (
             <p className="font-bold">
-                Thank you for reaching out! I'll get back to you soon.
+                Thank you for reaching out! I&apos;ll get back to you soon.
             </p>
         );
     }

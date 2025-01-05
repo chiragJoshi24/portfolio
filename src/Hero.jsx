@@ -1,4 +1,3 @@
-import React from 'react';
 import passportPhoto from './assets/my-passport-photo.jpg';
 import GlideY from './Animations/GlideY';
 import './index.css';

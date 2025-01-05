@@ -1,4 +1,3 @@
-import React from 'react';
 import Glide from './Animations/Glide';
 import HeadingAnimation from './Animations/HeadingAnimation';
 import BlogCard from './Components/BlogCard';
@@ -9,7 +8,7 @@ import Unet from './assets/Unet.jpg';
 const Blog = () => {
     const mobile = window.innerWidth <= 1024;
     return (
-        <div className="bg-[#0e1016] pb-24 w-full" id="blog">
+        <div className="bg-[#0e1016] pb-24 w-full justify-center" id="blog">
             <h1 className="font-black text-[4rem] leading-tight py-14 text-center">
                 <HeadingAnimation> BLOGS AND ARTICLES </HeadingAnimation>
             </h1>
@@ -21,7 +20,8 @@ const Blog = () => {
                     </HeadingAnimation>
                 </p>
             </div>
-            <div className="flex flex-col lg:flex-row justify-center items-center lg:w-full min-w-96">
+            <div className="flex flex-wrap justify-center w-full p-4 overflow-hidden">
+                {/* flex flex-wrap justify-center gap-8 max-w-[90%] bg-[#0E1016] overflow-hidden */}
                 <Glide
                     delay={0.6}
                     visible={0.5}

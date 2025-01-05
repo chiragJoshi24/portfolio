@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const BlogCard = ({ title, source, text, image, date }) => {
     return (
@@ -28,6 +28,13 @@ const BlogCard = ({ title, source, text, image, date }) => {
             </div>
         </div>
     );
+};
+BlogCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    source: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
 };
 
 export default BlogCard;
