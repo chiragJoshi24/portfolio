@@ -11,7 +11,7 @@ const ProjectCard = ({
     count,
 }) => {
     return (
-        <div className="bg-[#1a1d23] flex flex-col my-8 w-[1100px] max-w-[85%] rounded-xl border-2 border-blue-50">
+        <div className="bg-[#1a1d23] flex flex-col my-8 w-[550px] max-w-[85%] rounded-xl border-2 border-blue-50">
             <div className="flex flex-row mt-12 mb-8 justify-between items-center">
                 <div className="text-4xl font-black ml-16">
                     <HeadingAnimation>{name}</HeadingAnimation>
@@ -40,13 +40,13 @@ const ProjectCard = ({
                 </div>
             </div>
             <div
-                className={`flex flex-col ${count % 2 === 0 ? 'lg:flex-row-reverse ' : 'lg:flex-row '} justify-center items-center mb-4 lg:mb-8`}
+                className={`flex flex-col justify-center items-center mb-4 lg:mb-8`}
             >
-                <div
-                    className={`w-[80%] lg:w-[1200px] flex justify-center lg:justify-between mb-6 lg:mb-0 m-auto px-4 lg:px-8`}
-                >
-                    <img src={image} alt={name} className="rounded-lg" />
-                </div>
+                <img
+                    src={image}
+                    alt={name}
+                    className="rounded-lg mb-7 w-[80%] max-w-[80%]"
+                />
                 <div className="font-serif text-xl px-6 md:px-12 lg:px-16">
                     <p>
                         <HeadingAnimation delay={0.02}>

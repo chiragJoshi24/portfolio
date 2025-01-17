@@ -56,7 +56,9 @@ const Projects = () => {
                 />
                 <ProjectCard
                     name={'Summarize Youtube Videos'}
-                    techStack={'HTML\u00A0 CSS\u00A0 JavaScript\u00A0 Flask\u00A0 Gemini'}
+                    techStack={
+                        'HTML\u00A0 CSS\u00A0 JavaScript\u00A0 Flask\u00A0 Gemini'
+                    }
                     description={
                         'Chrome extension designed to summarize YouTube videos quickly. Allows users to obtain a summary of a YouTube video in seconds, either by using the URL of the currently active tab or by inputting a specific video link. This project leverages APIs like Google Gemini and incorporates a user-friendly interface for seamless interaction. '
                     }
