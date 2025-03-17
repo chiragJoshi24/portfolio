@@ -1,4 +1,4 @@
-import './index.css';
+import '../index.css';
 const Navbar = () => {
     const navItems = [
         { label: 'Home', key: 'home', sectionId: 'home' },
