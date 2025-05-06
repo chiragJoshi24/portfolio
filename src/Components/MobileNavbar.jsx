@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const navItems = [
-        { label: "Home", key: "home", sectionId: "home" },
-        { label: "About Me", key: "about", sectionId: "about" },
-        { label: "Blogs", key: "blog", sectionId: "blog" },
-        { label: "Projects", key: "projects", sectionId: "projects" },
-        { label: "Work Experience", key: "work", sectionId: "work" },
-        { label: "Contact Info", key: "contact", sectionId: "contact" },
+        { label: 'Home', key: 'home', sectionId: 'home' },
+        { label: 'About Me', key: 'about', sectionId: 'about' },
+        { label: 'Blogs', key: 'blog', sectionId: 'blog' },
+        { label: 'Projects', key: 'projects', sectionId: 'projects' },
+        { label: 'Work Experience', key: 'work', sectionId: 'work' },
+        { label: 'Contact Info', key: 'contact', sectionId: 'contact' },
     ];
 
     return (
@@ -31,7 +31,7 @@ const MobileNavbar = () => {
                         initial={{ x: 50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: 50, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
                     >
                         {navItems.map((item, index) => (
                             <motion.a
@@ -41,7 +41,11 @@ const MobileNavbar = () => {
                                 initial={{ x: 50, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 exit={{ x: 50, opacity: 0 }}
-                                transition={{ duration: 0.3, delay: index * 0.1, ease: "easeOut" }}
+                                transition={{
+                                    duration: 0.3,
+                                    delay: index * 0.1,
+                                    ease: 'easeOut',
+                                }}
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}

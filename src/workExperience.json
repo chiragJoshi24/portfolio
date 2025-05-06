@@ -57,5 +57,35 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Backend Developer - InstaAstro Technologies Pvt. Ltd.",
+        "workDuration": "March 2025 - Current",
+        "description": [
+            {
+                "work": "Developed and maintained Caching System for DB transaction optimization.",
+                "subWork": [
+                    "Implemented caching system for entire Database reducing DB utilization from ~98% to ~50%.",
+                    "Cached API responses to lower CPU utilization from ~80% to ~60%.",
+                    "Worked with REDIS and SENTINEL to for load balancing system."
+                ]
+            },
+            {
+                "work": "Implemented the entire system in FastAPI to improve and optimize the system.",
+                "subWork": [
+                    "Planned and recreated the enitre system previously in Django into FastAPI.",
+                    "Participated in code reviews to maintain high-quality code and adhere to coding standards.",
+                    "Created Internal Libraries to be used throughout the codebase."
+                ]
+            },
+            {
+                "work": "DevOps Collaboration and Analytics Optimization",
+                "subWork": [
+                    "Designed internal analytics and reporting systems using MariaDB and raw SQL queries.",
+                    "Optimized database performance through indexing and query tuning.",
+                    "Collaborated with DevOps teams to ensure smooth deployment and integration of backend services."
+                ]
+            }
+        ]
     }
 ]
