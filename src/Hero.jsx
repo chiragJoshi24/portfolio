@@ -65,21 +65,19 @@ const Hero = () => {
             <div className="absolute my-20 flex w-full justify-between bottom-0">
                 <div className="ml-32 font-medium text-lg w-96">
                     <GlideY delay={1.8}>
-                        Full Stack Developer, Product Designer & Ex-Frontend
-                        Intern at
+                        Optimizing systems as a Software Developer at
                         <a
-                            href="https://www.grappl.tech/"
+                            href="https://www.instaastro.in/"
                             target="_blank"
                             className="p-2"
                         >
-                            <u>Grappl.tech</u>
+                            <u>Instaastro</u>
                         </a>
                     </GlideY>
                 </div>
                 <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
                     <GlideY delay={1.8}>
-                        Focused on interfaces and experiences, working remotely
-                        in India.
+                        Building interfaces and crafting user experiences remotely from India.
                     </GlideY>
                 </div>
             </div>
