@@ -1,89 +1,31 @@
 [
     {
-        "name": "Software Developer Intern - GrapplTech",
-        "description": [
-            {
-                "work": "Developed Diverse Front-end Webpage Templates.",
-                "subWork": [
-                    "Created a library of responsive, visually appealing templates aligned with the company's branding and UX guidelines",
-                    "Implemented best practices for accessibility, optimization, and cross-browser compatibility"
-                ]
-            },
-            {
-                "work": "Supported GrapplTech's Mission with High-quality, Optimized Templates.",
-                "subWork": [
-                    "Worked closely with design and product teams to translate requirements into effective template designs.",
-                    "Optimized templates for fast loading times and accessibility.",
-                    "Regularly tested templates across devices and browsers"
-                ]
-            },
-            {
-                "work": "Developed Multiple Templates, Improving Completion Time by 20%.",
-                "subWork": [
-                    "Created a diverse library of reusable templates covering common page types.",
-                    "Implemented a template-based approach to enable faster webpage development.",
-                    "Documented the template library and provided training to the development team."
-                ]
-            }
-        ],
-        "workDuration": "July 2024 - August 2024"
-    },
-    {
-        "name": "Trainee Technical Support - Sony India Private Limited",
-        "workDuration": "September 2024 - October 2024",
-        "description": [
-            {
-                "work": "Provided Technical Support for Over 1,000 Sony India Customers Monthly",
-                "subWork": [
-                    "Resolved a wide range of technical issues for Sony appliances, TVs, and audio systems, ensuring effective resolutions.",
-                    "Provided clear troubleshooting guidance, achieving a 90%+ issue resolution rate and high customer satisfaction.",
-                    "Handled high volumes of support queries while maintaining quality and professionalism."
-                ]
-            },
-            {
-                "work": "Collaborated with the Product Team to Offer Real-time Feedback",
-                "subWork": [
-                    "Identified recurring technical issues from customer interactions and shared actionable insights with the product team.",
-                    "Provided feedback to improve product quality and helped refine troubleshooting workflows for better efficiency.",
-                    "Participated in cross-functional meetings to align support strategies with product updates."
-                ]
-            },
-            {
-                "work": "Consistently Exceeded Key Performance Indicators (KPIs)",
-                "subWork": [
-                    "Maintained an average resolution time of under 7 minutes by using efficient diagnostic methods.",
-                    "Achieved high first-call resolution rates, minimizing the need for follow-ups and boosting customer satisfaction.",
-                    "Consistently surpassed targets for response times, resolution times, and satisfaction scores."
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Backend Developer - InstaAstro Technologies Pvt. Ltd.",
+        "name": "Software Developer - InstaAstro Technologies Pvt. Ltd.",
         "workDuration": "March 2025 - Current",
         "description": [
             {
-                "work": "Developed and maintained Caching System for DB transaction optimization.",
+                "work": "Designed, optimized, and maintained core backend systems powering critical platform functionality.",
                 "subWork": [
-                    "Implemented caching system for entire Database reducing DB utilization from ~98% to ~50%.",
-                    "Cached API responses to lower CPU utilization from ~80% to ~60%.",
-                    "Worked with REDIS and SENTINEL to for load balancing system."
+                    "Redesigned the entire Login & Authentication system from scratch, improving security, validation flow, and overall reliability.",
+                    "Built a production-grade Distributed Rate Limiting System using Redis to prevent abuse and ensure fair API usage.",
+                    "Developed an automated Bot Chat System to streamline internal operations and reduce manual workload."
                 ]
             },
             {
-                "work": "Implemented the entire system in FastAPI to improve and optimize the system.",
+                "work": "Caching, Performance Optimization, and Database Efficiency Improvements",
                 "subWork": [
-                    "Planned and recreated the enitre system previously in Django into FastAPI.",
-                    "Participated in code reviews to maintain high-quality code and adhere to coding standards.",
-                    "Created Internal Libraries to be used throughout the codebase."
+                    "Implemented a platform-wide caching layer to optimize DB transactions, reducing overall DB usage from ~97% to ~20%.",
+                    "Implemented API-level caching to reduce CPU utilization and improve response times.",
+                    "Worked extensively with Redis and Redis Sentinel for high availability, failover, and load balancing.",
+                    "Optimized several API endpoints to improve performance and reduce latency."
                 ]
             },
             {
-                "work": "DevOps Collaboration and Analytics Optimization",
+                "work": "System Migration, Architecture Improvement, and Code Quality",
                 "subWork": [
-                    "Designed internal analytics and reporting systems using MariaDB and raw SQL queries.",
-                    "Optimized database performance through indexing and query tuning.",
-                    "Collaborated with DevOps teams to ensure smooth deployment and integration of backend services."
+                    "Led migration of major backend components from Django to FastAPI to improve performance, scalability, and developer experience.",
+                    "Designed internal Python libraries and reusable utilities for consistent use across the codebase.",
+                    "Collaborated in code reviews, architecture discussions, and standardization of backend development practices."
                 ]
             }
         ]

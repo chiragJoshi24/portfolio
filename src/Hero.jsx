@@ -67,7 +67,7 @@ const Hero = () => {
                     <GlideY delay={1.8}>
                         Optimizing systems as a Software Developer at
                         <a
-                            href="https://www.instaastro.in/"
+                            href="https://instaastro.com/"
                             target="_blank"
                             className="p-2"
                         >
@@ -77,7 +77,7 @@ const Hero = () => {
                 </div>
                 <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
                     <GlideY delay={1.8}>
-                        Building interfaces and crafting user experiences remotely from India.
+                        Building interfaces and crafting user experiences from India.
                     </GlideY>
                 </div>
             </div>

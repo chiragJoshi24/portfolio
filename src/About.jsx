@@ -74,23 +74,23 @@ const About = () => {
 
                 <div className="w-full md:w-[35%]">
                     <Section
-                        title="Frontend Tools & Frameworks"
-                        content="HTML, CSS, JavaScript (ES6+), ReactJS, Tailwind CSS, Bootstrap, Redux, Redux Toolkit, React Testing Library."
+                        title="Frontend Frameworks"
+                        content="HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Bootstrap, Redux, Redux Toolkit, React Testing Library."
                     />
 
                     <Section
-                        title="Backend Tools"
-                        content="MongoDB, NodeJS, ExpressJS, Postman, HTTP Toolkit, REST APIs."
+                        title="Backend Frameworks"
+                        content="Django, Django REST Framework, FastAPI."
                     />
 
                     <Section
                         title="Languages"
-                        content="C, C++, Python, JavaScript"
+                        content="C, C++, Python, JavaScript, Go."
                     />
 
                     <Section
                         title="Other Tools and Technologies"
-                        content="Git, GitHub, MySQL, GraphQL, Linux, Microsoft Office Suite."
+                        content="Redis, Kubernetes, Git, GitHub, Postman."
                     />
                 </div>
             </div>

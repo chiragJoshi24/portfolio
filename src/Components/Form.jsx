@@ -40,7 +40,7 @@ const Form = () => {
                 name="message"
                 type="message"
                 placeholder="Your Message"
-                className="p-3 rounded bg-[#1a1d23] text-white h-28"
+                className="p-3 rounded bg-[#1a1d23] text-white h-28 min-h-[7rem] max-h-48 resize-y"
             />
             <ValidationError
                 prefix="Message"

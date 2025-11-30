@@ -1,12 +1,10 @@
 import WorkExCard from './Components/WorkExCard';
 import data from './workExperience.json';
-import grappl from '/grapplTechLogo.png';
-import sony from '/sonyIndiaLogo.png';
 import instaastro from '/instaastro.png';
 import HeadingAnimation from './Animations/HeadingAnimation';
 
 const WorkExperience = () => {
-    const images = [grappl, sony, instaastro];
+    const images = [instaastro];
     return (
         <div
             className="bg-[#0E1016] flex flex-col justify-center items-center pb-32"
