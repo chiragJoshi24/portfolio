@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="flex w-full justify-between mt-16">
                 <GlideY delay={1.8}>
                     <a
-                        href="https://drive.google.com/file/d/1Wb_YvOK3b5ftftEKnptR8NA3MqphaJGS/view?usp=sharing"
+                        href="https://drive.google.com/file/d/13nCc2d9GiTo20Iy95LbsTPuDSwd7hQsB/view?usp=sharing"
                         target="_blank"
                         className="ml-32 left-0 border-solid border-white border-2 py-2 px-4 rounded"
                     >
