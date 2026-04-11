@@ -9,59 +9,47 @@ const About = () => {
         >
             <h1 className=" mt-10 font-black text-[4rem] max-w-7xl text-left leading-tight">
                 <HeadingAnimation>
-                    I MAKE BEAUTIFUL WEBSITES POWERFUL, AND CONTENT CAPTIVATING.
+                    I BUILD FAST, RELIABLE BACKEND SYSTEMS THAT SCALE.
                 </HeadingAnimation>
             </h1>
             <div className="flex flex-col md:flex-row justify-between w-full max-w-7xl m-20 ">
                 <div className="w-full md:w-[60%]">
                     <p className="leading-snug font-serif text-2xl mb-8">
                         <HeadingAnimation delay={0.03}>
-                            I&apos;m a passionate developer and designer,
-                            graduated in July 2024 with a Bachelor&apos;s degree
-                            in Computer Science and Engineering. My journey in
-                            the world of software development is driven by a
-                            desire to create solutions that solve real-world
-                            problems. I&apos;m an effective communicator and
-                            team player, adept at collaborating with
-                            multidisciplinary teams to achieve project goals.
+                            I&apos;m a backend-focused Software Developer at
+                            InstaAstro, where I optimize systems handling ~900
+                            req/s at peak. I graduated with a B.Tech in
+                            Computer Science from MAIT in June 2024 and
+                            qualified GATE CS 2025 in the top 5%.
                         </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
                         <HeadingAnimation>
-                            I have previously worked on
+                            My day-to-day revolves around
                         </HeadingAnimation>{' '}
                         <span className="text-[#FACC15] font-bold">
                             <HeadingAnimation>
-                                Web Development and Machine Learning.
+                                performance optimization, caching, CI/CD, and
+                                building production-grade tooling.
                             </HeadingAnimation>
                         </span>{' '}
                         <HeadingAnimation>
-                            I am enthusiastic about and regularly read up on
-                        </HeadingAnimation>{' '}
-                        <span className="text-[#FACC15] font-bold">
-                            <HeadingAnimation>Neural Network</HeadingAnimation>
-                        </span>{' '}
-                        <HeadingAnimation>research.</HeadingAnimation>
+                            I&apos;ve cut database load from 97% to 20%,
+                            slashed CI/CD times from 40 min to 5 min, and built
+                            a custom APM suite used in production.
+                        </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
                         <HeadingAnimation delay={0.03}>
-                            Currently, I&apos;m working on exciting projects
-                            that I can&apos;t wait to share. I thrive on
-                            challenges and am always open to new opportunities
-                            and collaborations.
+                            I care about writing honest, measurable code &mdash;
+                            not over-engineered abstractions. I&apos;m always
+                            looking for opportunities to push systems harder and
+                            learn from real production traffic.
                         </HeadingAnimation>
                     </p>
                     <p className="leading-snug font-serif text-2xl mb-8">
                         <HeadingAnimation>
-                            I possess a solid understanding of core programming
-                            principles and algorithms, with practical experience
-                            through internships.
-                        </HeadingAnimation>
-                    </p>
-
-                    <p className="leading-snug font-serif text-2xl mb-8">
-                        <HeadingAnimation>
-                            In addition to Software Developer, I am also a
+                            Outside of work, I&apos;m also a
                         </HeadingAnimation>{' '}
                         <span className="text-[#FACC15] font-bold">
                             <HeadingAnimation>
@@ -74,23 +62,23 @@ const About = () => {
 
                 <div className="w-full md:w-[35%]">
                     <Section
-                        title="Frontend Frameworks"
-                        content="HTML, CSS, JavaScript, ReactJS, Tailwind CSS, Bootstrap, Redux, Redux Toolkit, React Testing Library."
-                    />
-
-                    <Section
-                        title="Backend Frameworks"
-                        content="Django, Django REST Framework, FastAPI."
-                    />
-
-                    <Section
                         title="Languages"
-                        content="C, C++, Python, JavaScript, Go."
+                        content="Python, Go, C, C++, JavaScript."
                     />
 
                     <Section
-                        title="Other Tools and Technologies"
-                        content="Redis, Kubernetes, Git, GitHub, Postman."
+                        title="Backend & Infrastructure"
+                        content="Django, DRF, FastAPI, Redis, PostgreSQL, Kubernetes."
+                    />
+
+                    <Section
+                        title="DevOps & Tools"
+                        content="Docker, GitLab CI, Kaniko, Git, Hadolint, Postman."
+                    />
+
+                    <Section
+                        title="Frontend"
+                        content="React, Tailwind CSS, HTML, CSS."
                     />
                 </div>
             </div>

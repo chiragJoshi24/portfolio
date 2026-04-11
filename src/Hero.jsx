@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="flex w-full justify-between mt-16">
                 <GlideY delay={1.8}>
                     <a
-                        href="https://drive.google.com/file/d/13nCc2d9GiTo20Iy95LbsTPuDSwd7hQsB/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1GVynV0IYP0UOE_V5Phqe2R9mfUs8vzEd/view?usp=sharing"
                         target="_blank"
                         className="ml-32 left-0 border-solid border-white border-2 py-2 px-4 rounded"
                     >
@@ -77,7 +77,7 @@ const Hero = () => {
                 </div>
                 <div className="mr-32 font-medium text-lg w-96 hidden md:inline text-right">
                     <GlideY delay={1.8}>
-                        Building interfaces and crafting user experiences from India.
+                        Building fast, reliable backend systems from India.
                     </GlideY>
                 </div>
             </div>

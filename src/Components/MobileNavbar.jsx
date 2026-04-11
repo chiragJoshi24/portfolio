@@ -8,7 +8,6 @@ const MobileNavbar = () => {
     const navItems = [
         { label: 'Home', key: 'home', sectionId: 'home' },
         { label: 'About Me', key: 'about', sectionId: 'about' },
-        { label: 'Blogs', key: 'blog', sectionId: 'blog' },
         { label: 'Projects', key: 'projects', sectionId: 'projects' },
         { label: 'Work Experience', key: 'work', sectionId: 'work' },
         { label: 'Contact Info', key: 'contact', sectionId: 'contact' },

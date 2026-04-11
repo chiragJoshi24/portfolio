@@ -7,9 +7,11 @@ const ContactInfo = () => {
     const canvasRef = useRef(null);
 
     useEffect(() => {
+        const isMobile = window.innerWidth <= 1024;
         let canvas = canvasRef.current;
         let ctx = canvas.getContext('2d');
         let w, h, moon;
+        let animFrameId;
         const stars = [];
         const meteors = [];
 
@@ -20,11 +22,13 @@ const ContactInfo = () => {
 
         function init() {
             resizeReset();
+            if (isMobile) return; // skip canvas animation on mobile
             moon = new Moon();
-            for (let a = 0; a < w * h * 0.0001; a++) {
+            const starCount = Math.min(w * h * 0.0001, 100);
+            for (let a = 0; a < starCount; a++) {
                 stars.push(new Star());
             }
-            for (let b = 0; b < 4; b++) {
+            for (let b = 0; b < 2; b++) {
                 meteors.push(new Meteor());
             }
             animationLoop();
@@ -33,7 +37,7 @@ const ContactInfo = () => {
         function animationLoop() {
             ctx.clearRect(0, 0, w, h);
             drawScene();
-            requestAnimationFrame(animationLoop);
+            animFrameId = requestAnimationFrame(animationLoop);
         }
 
         function drawScene() {
@@ -140,6 +144,7 @@ const ContactInfo = () => {
 
         return () => {
             window.removeEventListener('resize', resizeReset);
+            if (animFrameId) cancelAnimationFrame(animFrameId);
         };
     }, []);
     const mobile = window.innerWidth <= 1024;
@@ -167,116 +172,100 @@ const ContactInfo = () => {
                         something?
                     </p>
                 </Glide>
-                <div className="flex flex-row justify-between w-[685px] mx-auto mb-10">
+                <div className="flex flex-row justify-between w-[750px] mx-auto mb-10">
                     <div className="w-[380px] max-w-[90%] border-blue-50 rounded-lg border-2 p-10">
                         <Form />
                     </div>
-                    <div className="text-left">
+                    <div className="text-left w-[280px]">
                         <Glide
                             transitionDistance={mobile ? -100 : 100}
                             visible={mobile ? 0 : 0.5}
                         >
                             <h1 className="text-3xl font-semibold py-2">
-                                My Profiles
+                                Quick Info
                             </h1>
                         </Glide>
 
-                        <ul>
-                            <Glide
-                                transitionDistance={mobile ? -100 : 100}
-                                visible={mobile ? 0 : 0.5}
-                            >
-                                <li className="p-3 font-black text-lg">
-                                    <a
-                                        href="https://github.com/chiragJoshi24"
-                                        target="_blank"
-                                        className="p-3"
-                                    >
-                                        GITHUB
-                                    </a>
-                                </li>
-                            </Glide>
-                            <Glide
-                                transitionDistance={mobile ? -100 : 100}
-                                visible={mobile ? 0 : 0.5}
-                            >
-                                <li className="p-3 font-black text-lg">
-                                    <a
-                                        href="https://www.linkedin.com/in/chirag-joshi-67b464216/"
-                                        target="_blank"
-                                        className="p-3"
-                                    >
-                                        LINKEDIN
-                                    </a>
-                                </li>
-                            </Glide>
-                            <Glide
-                                transitionDistance={mobile ? -100 : 100}
-                                visible={mobile ? 0 : 0.5}
-                            >
-                                <li className="p-3 font-black text-lg">
-                                    <a
-                                        href="https://hashnode.com/@chiragj2403"
-                                        target="_blank"
-                                        className="p-3"
-                                    >
-                                        HASHNODE
-                                    </a>
-                                </li>
-                            </Glide>
-                            <Glide
-                                transitionDistance={mobile ? -100 : 100}
-                                visible={mobile ? 0 : 0.5}
-                            >
-                                <li className="p-3 font-black text-lg">
-                                    <a
-                                        href="https://leetcode.com/u/chirag45610/"
-                                        target="_blank"
-                                        className="p-3"
-                                    >
-                                        LEETCODE
-                                    </a>
-                                </li>
-                            </Glide>
-                            <Glide
-                                transitionDistance={mobile ? -100 : 100}
-                                visible={mobile ? 0 : 0.5}
-                            >
-                                <li className="p-3 font-black text-lg">
-                                    <a
-                                        href="https://x.com/ChiragJ72010984"
-                                        target="_blank"
-                                        className="p-3"
-                                    >
-                                        TWITTER
-                                    </a>
-                                </li>
-                            </Glide>
-                            <Glide
-                                transitionDistance={mobile ? -100 : 100}
-                                visible={mobile ? 0 : 0.5}
-                            >
-                                <li className="p-3 font-black text-lg ">
-                                    <a
-                                        href="mailto:chirag45610@gmail.com"
-                                        target="_blank"
-                                        className="p-3"
-                                    >
-                                        SEND ME AN EMAIL
-                                    </a>
-                                </li>
-                            </Glide>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                        <Glide
+                            transitionDistance={mobile ? -100 : 100}
+                            visible={mobile ? 0 : 0.5}
+                        >
+                            <div className="py-3 border-b border-gray-700">
+                                <p className="text-gray-400 text-sm uppercase tracking-wider">Role</p>
+                                <p className="font-semibold text-lg">Engineer with InstaAstro</p>
+                            </div>
+                        </Glide>
 
-            <div className="absolute bottom-12 flex justify-between w-full font-bold">
-                <div className="ml-16">
-                    <GlideY>COPYRIGHT 2024</GlideY>
-                </div>
-                <div className="mr-16">
-                    <GlideY>DESIGNED AND CREATED BY CHIRAG JOSHI</GlideY>
+                        <Glide
+                            transitionDistance={mobile ? -100 : 100}
+                            visible={mobile ? 0 : 0.5}
+                        >
+                            <div className="py-3 border-b border-gray-700">
+                                <p className="text-gray-400 text-sm uppercase tracking-wider">Location</p>
+                                <p className="font-semibold text-lg">New Delhi, India</p>
+                            </div>
+                        </Glide>
+
+                        <Glide
+                            transitionDistance={mobile ? -100 : 100}
+                            visible={mobile ? 0 : 0.5}
+                        >
+                            <div className="py-3 border-b border-gray-700">
+                                <p className="text-gray-400 text-sm uppercase tracking-wider">Email</p>
+                                <a href="mailto:chirag45610@gmail.com" className="font-semibold text-lg hover:text-[#FACC15] transition-colors py-1 px-2 inline-block">
+                                    chirag45610@gmail.com
+                                </a>
+                            </div>
+                        </Glide>
+
+                        <Glide
+                            transitionDistance={mobile ? -100 : 100}
+                            visible={mobile ? 0 : 0.5}
+                        >
+                            <h2 className="text-xl font-semibold pt-6 pb-2">
+                                Profiles
+                            </h2>
+                        </Glide>
+
+                        <div className="flex flex-col gap-2 pt-2">
+                            <Glide
+                                transitionDistance={mobile ? -100 : 100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <a
+                                    href="https://github.com/chiragJoshi24"
+                                    target="_blank"
+                                    className="font-black text-lg hover:text-[#FACC15] transition-colors py-1"
+                                >
+                                    GITHUB
+                                </a>
+                            </Glide>
+                            <Glide
+                                transitionDistance={mobile ? -100 : 100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <a
+                                    href="https://www.linkedin.com/in/chirag-joshi-67b464216/"
+                                    target="_blank"
+                                    className="font-black text-lg hover:text-[#FACC15] transition-colors py-1"
+                                >
+                                    LINKEDIN
+                                </a>
+                            </Glide>
+                            <Glide
+                                transitionDistance={mobile ? -100 : 100}
+                                visible={mobile ? 0 : 0.5}
+                            >
+                                <a
+                                    href="https://leetcode.com/u/chirag45610/"
+                                    target="_blank"
+                                    className="font-black text-lg hover:text-[#FACC15] transition-colors py-1"
+                                >
+                                    LEETCODE
+                                </a>
+                            </Glide>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

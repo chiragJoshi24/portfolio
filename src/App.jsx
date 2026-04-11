@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
-import MainContent from './MainContent';
+import { useState, useEffect, lazy, Suspense } from 'react';
+const MainContent = lazy(() => import('./MainContent'));
 import Preloader from './Preloader';
 import Cursor from './Components/Cursor';
+
+const isMobileDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
 const App = () => {
     const [isPreloaderDone, setIsPreloaderDone] = useState(false);
@@ -18,8 +20,14 @@ const App = () => {
 
     return (
         <div className="app-container">
-            <Cursor />
-            {!isPreloaderDone ? <Preloader /> : <MainContent />}
+            {!isMobileDevice && <Cursor />}
+            {!isPreloaderDone ? (
+                <Preloader />
+            ) : (
+                <Suspense fallback={null}>
+                    <MainContent />
+                </Suspense>
+            )}
         </div>
         // <>
         //     <MainContent />

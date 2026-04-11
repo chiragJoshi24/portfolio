@@ -1,31 +1,33 @@
 [
     {
         "name": "Software Developer - InstaAstro Technologies Pvt. Ltd.",
-        "workDuration": "March 2025 - Current",
+        "workDuration": "March 2025 - Present",
         "description": [
             {
-                "work": "Designed, optimized, and maintained core backend systems powering critical platform functionality.",
+                "work": "Performance & Database Optimization",
                 "subWork": [
-                    "Redesigned the entire Login & Authentication system from scratch, improving security, validation flow, and overall reliability.",
-                    "Built a production-grade Distributed Rate Limiting System using Redis to prevent abuse and ensure fair API usage.",
-                    "Developed an automated Bot Chat System to streamline internal operations and reduce manual workload."
+                    "Reduced overall DB usage from ~97% to ~20% at ~900 req/s through strategic caching and query optimization.",
+                    "Optimized critical API endpoints to be 35% faster via database indexing, I/O optimization, and context switching improvements."
                 ]
             },
             {
-                "work": "Caching, Performance Optimization, and Database Efficiency Improvements",
+                "work": "CI/CD & Delivery",
                 "subWork": [
-                    "Implemented a platform-wide caching layer to optimize DB transactions, reducing overall DB usage from ~97% to ~20%.",
-                    "Implemented API-level caching to reduce CPU utilization and improve response times.",
-                    "Worked extensively with Redis and Redis Sentinel for high availability, failover, and load balancing.",
-                    "Optimized several API endpoints to improve performance and reduce latency."
+                    "Slashed CI/CD pipeline time from 40 min to 5 min through Docker layer caching and migrating from dind to Kaniko.",
+                    "Delivered end-to-end application features as an individual contributor across the full stack."
                 ]
             },
             {
-                "work": "System Migration, Architecture Improvement, and Code Quality",
+                "work": "Observability & Monitoring",
                 "subWork": [
-                    "Led migration of major backend components from Django to FastAPI to improve performance, scalability, and developer experience.",
-                    "Designed internal Python libraries and reusable utilities for consistent use across the codebase.",
-                    "Collaborated in code reviews, architecture discussions, and standardization of backend development practices."
+                    "Built a custom APM suite — TimeLogger, APILog, and APIQueryLog — for production performance monitoring and debugging."
+                ]
+            },
+            {
+                "work": "Core Platform Systems",
+                "subWork": [
+                    "Redesigned the Login & Authentication system end-to-end, improving security, validation flow, and reliability.",
+                    "Built a config-driven rate limiting system with sliding-window enforcement across IP, device, and phone parameters, including auto-blacklisting and whitelist bypasses."
                 ]
             }
         ]

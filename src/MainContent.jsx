@@ -4,7 +4,6 @@ import Navbar from './Components/PCNavbar';
 import Foldable from './Components/MobileNavbar';
 import About from './About';
 import Projects from './Projects';
-import Blog from './Blog';
 import WorkExperience from './WorkExperience';
 import ContactInfo from './ContactInfo';
 
@@ -25,7 +24,6 @@ const MainContent = () => {
             <Hero />
             {isMobile ? <Foldable /> : <Navbar />}
             <About />
-            <Blog />
             <Projects />
             <WorkExperience />
             <ContactInfo />
