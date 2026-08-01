@@ -13,7 +13,7 @@ const App = () => {
         const timer = setTimeout(() => {
             setIsPreloaderDone(true);
             document.body.classList.remove('no-scroll', 'no-clicks');
-        }, 4000);
+        }, 3600);
 
         return () => clearTimeout(timer);
     }, []);

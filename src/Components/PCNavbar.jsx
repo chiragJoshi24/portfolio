@@ -1,4 +1,6 @@
+import { useInView } from 'react-intersection-observer';
 import '../index.css';
+
 const Navbar = () => {
     const navItems = [
         { label: 'Home', key: 'home', sectionId: 'home' },
@@ -7,6 +9,8 @@ const Navbar = () => {
         { label: 'Work Experience', key: 'work', sectionId: 'work' },
         { label: 'Contact Info', key: 'contact', sectionId: 'contact' },
     ];
+
+    const { ref, inView } = useInView({ threshold: 1, triggerOnce: true });
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -34,7 +38,18 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 p-1 bg-[#0A0A0E] rounded-md z-50 fade-in">
+        <nav
+            ref={ref}
+            style={{
+                opacity: inView ? 1 : 0,
+                // combine with the fixed centering transform
+                transform: inView
+                    ? 'translateX(-50%) translateY(0)'
+                    : 'translateX(-50%) translateY(30px)',
+                transition: 'opacity 0.5s ease-out, transform 0.5s ease-out',
+            }}
+            className="fixed bottom-8 left-1/2 p-1 bg-[#0A0A0E] rounded-md z-50"
+        >
             <ul className="flex justify-center opacity-95 max-w-[80vw]">
                 {navItems.map((item) => (
                     <li key={item.key} className="font-medium">

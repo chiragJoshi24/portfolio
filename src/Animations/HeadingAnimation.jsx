@@ -9,7 +9,7 @@ const HeadingAnimation = ({
     visible = 1,
 }) => {
     const { ref, inView } = useInView({
-        threshold: `${visible}`,
+        threshold: visible,
         triggerOnce: true,
         rootMargin: '0px 0px -50px 0px',
     });

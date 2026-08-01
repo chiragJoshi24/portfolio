@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import useBlobity from 'blobity/lib/react/useBlobity';
 
 const Cursor = () => {
-    const [dotStyle, setDotStyle] = useState({ top: 0, left: 0 });
+    const dotRef = useRef(null);
 
     useBlobity({
         licenseKey: 'opensource',
@@ -15,13 +15,13 @@ const Cursor = () => {
 
     useEffect(() => {
         const handleMouseMove = (e) => {
-            setDotStyle({
-                top: `${e.clientY}px`,
-                left: `${e.clientX}px`,
-            });
+            if (dotRef.current) {
+                dotRef.current.style.top = `${e.clientY}px`;
+                dotRef.current.style.left = `${e.clientX}px`;
+            }
         };
 
-        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mousemove', handleMouseMove, { passive: true });
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
@@ -30,10 +30,11 @@ const Cursor = () => {
 
     return (
         <div
+            ref={dotRef}
             style={{
                 position: 'fixed',
-                top: dotStyle.top,
-                left: dotStyle.left,
+                top: 0,
+                left: 0,
                 width: '8px',
                 height: '8px',
                 backgroundColor: '#e4ded7',

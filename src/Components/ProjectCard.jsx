@@ -45,6 +45,8 @@ const ProjectCard = ({
                 <img
                     src={image}
                     alt={name}
+                    loading="lazy"
+                    decoding="async"
                     className="rounded-lg mb-7 w-[80%] max-w-[80%]"
                 />
                 <div className="font-serif text-xl px-6 md:px-12 lg:px-16">

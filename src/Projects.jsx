@@ -1,6 +1,7 @@
 import ProjectCard from './Components/ProjectCard';
 import RealTimeStreaming from './assets/streaming.jpg';
-import DjangoTracekit from './assets/django-tracekit.png';
+import DjangoTracekit from './assets/django-tracekit.jpg';
+import Nifti from './assets/niftito3d.png';
 import HeadingAnimation from './Animations/HeadingAnimation';
 
 const Projects = () => {
@@ -14,6 +15,33 @@ const Projects = () => {
             </h1>
             <div className="flex flex-wrap justify-center gap-8 max-w-[90%] bg-[#0E1016] overflow-hidden">
                 <ProjectCard
+                    name={'Django Tracekit'}
+                    techStack={
+                        'Python\u00A0 Django\u00A0 Redis\u00A0'
+                    }
+                    description={
+                        'A production-safe, lightweight Django APM module. Tracks CPU and memory usage per request step, logs API queries, and supports time-window targeting. Kubernetes-aware with zero frontend dependency — a practical alternative to django-silk for production environments.'
+                    }
+                    image={DjangoTracekit}
+                    sourceCode={
+                        'https://github.com/chiragJoshi24/django-tracekit'
+                    }
+                    count={2}
+                />
+                <ProjectCard
+                    name={'NIfTI To 3D Converter'}
+                    techStack={
+                        'Python\u00A0 U-net\u00A0 MatPlotlib\u00A0 Numpy'
+                    }
+                    description={
+                        'Reconstructed 3D organ and tissue images from 2D medical data using U-Net with custom preprocessing and augmentation. Created tools for 3D volume reconstruction, mesh generation, and STL export of segmented organs. Developed an end-to-end medical imaging pipeline for 3D CT scan processing, segmentation, and visualization.'
+                    }
+                    // liveLink={'https://chiragjoshi24.github.io/Nifti-to-3D'}
+                    image={Nifti}
+                    sourceCode={'https://github.com/chiragJoshi24/Nifti-to-3D'}
+                    count={3}
+                />
+                <ProjectCard
                     name={'Real-Time Streaming'}
                     techStack={
                         'Go\u00A0 Redis\u00A0 PostgreSQL\u00A0 WebSockets'
@@ -26,20 +54,6 @@ const Projects = () => {
                         'https://github.com/chiragJoshi24/realtime-streaming-platform'
                     }
                     count={1}
-                />
-                <ProjectCard
-                    name={'Django Tracekit'}
-                    techStack={
-                        'Python\u00A0 Django\u00A0 Redis\u00A0 Middleware'
-                    }
-                    description={
-                        'A production-safe, lightweight Django APM module. Tracks CPU and memory usage per request step, logs API queries, and supports time-window targeting. Kubernetes-aware with zero frontend dependency — a practical alternative to django-silk for production environments.'
-                    }
-                    image={DjangoTracekit}
-                    sourceCode={
-                        'https://github.com/chiragJoshi24/django-tracekit'
-                    }
-                    count={2}
                 />
             </div>
         </div>
