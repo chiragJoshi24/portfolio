@@ -43,11 +43,9 @@ const Projects = () => {
                 />
                 <ProjectCard
                     name={'Real-Time Streaming'}
-                    techStack={
-                        'Go\u00A0 Redis\u00A0 PostgreSQL\u00A0 WebSockets'
-                    }
+                    techStack={'Go\u00A0 Redis\u00A0 SSE'}
                     description={
-                        'A high-performance real-time streaming platform built with Go for concurrent connection handling, Redis pub/sub for message fanout, and PostgreSQL for persistent storage. Designed to handle thousands of simultaneous connections with low-latency delivery.'
+                        'A zero-dependency real-time streaming platform in Go. Runs fully in-memory out of the box — plug in Redis to fan out across multiple instances. Stream ownership via a secret key; viewers subscribe over SSE for live chat and viewer-count events.'
                     }
                     image={RealTimeStreaming}
                     sourceCode={
