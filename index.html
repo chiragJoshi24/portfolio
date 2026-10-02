@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chirag Joshi — Backend Engineer</title>
+<meta name="description" content="Backend engineer building fast, reliable systems with Django, FastAPI, Go, Redis and Kubernetes.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+<meta property="og:title" content="Chirag Joshi — Backend Engineer">
+<meta property="og:description" content="Cut MySQL CPU from 97% to 20% at ~900 req/s. Cut CI/CD from 40 min to under 5.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0c0f'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='15' font-weight='700' fill='%23facc15' text-anchor='middle'%3Ecj%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b0c0f;--fg:#ececea;--fg2:#a3a5ab;--mute:#6d7077;--line:#1d1f25;--line2:#2a2d35;--card:#111317;
+  --acc:#facc15;--acc-soft:rgba(250,204,21,.08);--ok:#4ade80;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:"Inter var",Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-color-scheme:light){
+  :root{--bg:#fafaf8;--fg:#141518;--fg2:#4a4c52;--mute:#7c7f86;--line:#ebebe6;--line2:#dcdcd5;--card:#ffffff;
+    --acc:#b45309;--acc-soft:rgba(180,83,9,.06);--ok:#16a34a}
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:2rem}
+body{background:var(--bg);color:var(--fg2);font:15.5px/1.7 var(--sans);-webkit-font-smoothing:antialiased;
+  font-feature-settings:"ss01","cv11";text-rendering:optimizeLegibility;min-height:100vh;
+  background-image:radial-gradient(60rem 28rem at 50% -14rem,var(--acc-soft),transparent 70%);background-repeat:no-repeat}
+main{max-width:680px;margin:0 auto;padding:clamp(3.5rem,10vh,7rem) 1.5rem 3rem}
+p,li,dd{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance;color:var(--fg)}
+a{color:var(--fg);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;
+  transition:color .2s var(--ease),background-size .3s var(--ease)}
+a:hover{color:var(--acc);background-size:100% 1px}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:3px}
+::selection{background:var(--acc);color:#000}
+b{font-weight:550;color:var(--fg);font-variant-numeric:tabular-nums}
+
+/* reveal */
+.r{animation:in .7s var(--ease) both}
+.r:nth-child(2){animation-delay:.06s}.r:nth-child(3){animation-delay:.12s}.r:nth-child(4){animation-delay:.18s}
+.r:nth-child(5){animation-delay:.24s}.r:nth-child(6){animation-delay:.3s}.r:nth-child(7){animation-delay:.36s}
+.r:nth-child(n+8){animation-delay:.42s}
+@keyframes in{from{opacity:0;transform:translateY(8px);filter:blur(2px)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* header */
+.status{display:inline-flex;align-items:center;gap:.55rem;font:500 .75rem/1 var(--mono);color:var(--fg2);
+  padding:.45rem .75rem .45rem .6rem;border:1px solid var(--line2);border-radius:999px;background:var(--card)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 55%,transparent)}70%,100%{box-shadow:0 0 0 7px transparent}}
+h1{font-size:clamp(2.4rem,7vw,3.4rem);line-height:1.02;letter-spacing:-.045em;font-weight:650;margin:1.6rem 0 .9rem}
+.lead{font-size:1.06rem;color:var(--fg2);max-width:54ch}
+.lead em{font-style:normal;color:var(--fg)}
+nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.75rem}
+nav a{font:500 .8rem/1 var(--mono);color:var(--fg2);padding:.55rem .8rem;border:1px solid var(--line);border-radius:8px;
+  background:none;transition:color .2s var(--ease),border-color .2s var(--ease),background-color .2s var(--ease)}
+nav a:hover{color:var(--fg);border-color:var(--line2);background:var(--card)}
+nav a.pri{color:var(--bg);background:var(--fg);border-color:var(--fg)}
+nav a.pri:hover{color:var(--bg);background:var(--acc);border-color:var(--acc)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin:3.5rem 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats>div{padding:1.15rem 0 1.1rem 1rem;border-left:1px solid var(--line)}
+.stats>div:first-child{border-left:0;padding-left:0}
+.n{font:600 1.5rem/1.1 var(--mono);letter-spacing:-.04em;color:var(--fg);white-space:nowrap;font-variant-numeric:tabular-nums}
+.n i{font-style:normal;color:var(--acc);font-weight:400;margin:0 .05em}
+.l{font-size:.76rem;color:var(--mute);line-height:1.35;margin-top:.4rem}
+@media (max-width:600px){
+  .stats{grid-template-columns:1fr 1fr}
+  .stats>div:nth-child(3){border-left:0;padding-left:0}
+  .stats>div:nth-child(n+3){border-top:1px solid var(--line)}
+}
+
+/* sections */
+section{margin-top:4.5rem}
+h2{font:500 .72rem/1 var(--mono);text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin-bottom:1.6rem;display:flex;align-items:center;gap:.8rem}
+h2 span{color:var(--acc)}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+
+/* experience */
+.job{position:relative;padding-left:1.4rem;border-left:1px solid var(--line)}
+.job::before{content:"";position:absolute;left:-4.5px;top:.55rem;width:8px;height:8px;border-radius:50%;background:var(--bg);border:1.5px solid var(--acc)}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:.25rem 1rem;flex-wrap:wrap}
+h3{font-size:1.02rem;font-weight:600;letter-spacing:-.015em}
+h3 .at{color:var(--mute);font-weight:400}
+.meta{font:.75rem var(--mono);color:var(--mute);white-space:nowrap}
+.sub{font-size:.85rem;color:var(--mute);margin:.15rem 0 1rem}
+ul{list-style:none}
+li{position:relative;padding-left:1.15rem;font-size:.95rem}
+li+li{margin-top:.6rem}
+li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:1px;background:var(--mute)}
+
+/* projects */
+.proj{display:block;position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.3rem 1.35rem 1.2rem;
+  transition:border-color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease)}
+.proj:hover{color:inherit;border-color:var(--line2);transform:translateY(-2px);box-shadow:0 10px 30px -12px rgba(0,0,0,.35)}
+.proj+.proj{margin-top:.9rem}
+.proj .arr{position:absolute;top:1.2rem;right:1.25rem;font:1rem/1 var(--mono);color:var(--mute);transition:transform .25s var(--ease),color .25s var(--ease)}
+.proj:hover .arr{color:var(--acc);transform:translate(2px,-2px)}
+.proj p{font-size:.93rem;margin-top:.4rem;padding-right:1.5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1rem}
+.tags span{font:.7rem/1 var(--mono);padding:.35rem .55rem;border-radius:6px;color:var(--fg2);background:var(--bg);border:1px solid var(--line)}
+
+/* definition lists */
+dl{display:grid;grid-template-columns:8.5rem 1fr;gap:.85rem 1rem;font-size:.95rem}
+dt{font:.78rem/1.9 var(--mono);color:var(--mute)}
+dd{color:var(--fg)}
+dd .mute{color:var(--mute)}
+@media (max-width:520px){dl{grid-template-columns:1fr;gap:.1rem}dd+dt{margin-top:.8rem}}
+
+/* contact + footer */
+.cta{font-size:clamp(1.35rem,4vw,1.7rem);line-height:1.3;letter-spacing:-.025em;color:var(--fg);font-weight:550;max-width:24ch}
+.mail{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;font:500 .9rem var(--mono);color:var(--acc);background-size:100% 1px}
+.mail:hover{background-size:0 1px}
+footer{margin-top:5rem;padding-top:1.4rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;font:.72rem var(--mono);color:var(--mute)}
+
+@media print{body{background:#fff;color:#000}.r{animation:none}nav,.status .dot{display:none}a{color:#000}}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <div class="status r"><span class="dot"></span>shipping backend @ <a href="https://instaastro.com/" target="_blank" rel="noopener">InstaAstro</a></div>
+  <h1 class="r">Chirag Joshi</h1>
+  <p class="lead r">Backend engineer. I build <em>fast, reliable systems</em> and make slow ones fast — profiling, caching, and removing what doesn't need to exist. Django, FastAPI, Go, Redis, MySQL, Kubernetes.</p>
+  <nav class="r">
+    <a class="pri" href="mailto:chirag45610@gmail.com">email me</a>
+    <a href="https://github.com/chiragJoshi24" target="_blank" rel="noopener">github</a>
+    <a href="https://www.linkedin.com/in/chirag-joshi-67b464216/" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://leetcode.com/u/chirag45610/" target="_blank" rel="noopener">leetcode</a>
+    <a href="https://x.com/ChiragJ72010984" target="_blank" rel="noopener">twitter</a>
+    <a href="resume.pdf" target="_blank">resume ↓</a>
+  </nav>
+  <div class="stats r" aria-label="Highlights">
+    <div><div class="n">97<i>→</i>20%</div><div class="l">MySQL CPU at ~900&nbsp;req/s</div></div>
+    <div><div class="n">40<i>→</i>5m</div><div class="l">CI/CD pipeline time</div></div>
+    <div><div class="n"><i>−</i>35%</div><div class="l">avg. API latency</div></div>
+    <div><div class="n">top&nbsp;5<i>%</i></div><div class="l">GATE CS 2025</div></div>
+  </div>
+</header>
+
+<section class="r">
+  <h2><span>01</span> Experience</h2>
+  <div class="job">
+    <div class="head"><h3>Software Developer <span class="at">· InstaAstro</span></h3><span class="meta">mar 2025 — present</span></div>
+    <div class="sub">Backend engineering — Django/DRF, FastAPI, Redis</div>
+    <ul>
+      <li>Reduced MySQL CPU from <b>97% to 20%</b> at <b>~900 req/s</b> peak by killing N+1 queries, adding multi-tier Redis caching, and restructuring query patterns on multi-million row tables.</li>
+      <li>Cut CI/CD from <b>40 minutes to under 5</b> with Docker layer caching and a migration from dind to Kaniko.</li>
+      <li>Designed and shipped the backend for a new domain-specific service as sole contributor — API design, auth, and internal admin tooling.</li>
+      <li>Made multiple APIs <b>~35% faster</b> on average through targeted indexes, less redundant I/O, and leaner execution paths.</li>
+      <li>Built a production-safe APM middleware stack capturing per-request latency, CPU/memory, and per-query SQL timings — used to hunt down slow endpoints across the codebase.</li>
+      <li>Redesigned login &amp; auth end-to-end, and built a config-driven sliding-window rate limiter across IP, device and phone with auto-blacklisting.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="r">
+  <h2><span>02</span> Projects</h2>
+  <a class="proj" href="https://github.com/chiragJoshi24/realtime-streaming-platform" target="_blank" rel="noopener">
+    <span class="arr" aria-hidden="true">↗</span>
+    <h3>Real-Time Streaming</h3>
+    <p>Zero-dependency streaming platform in Go. Runs fully in-process; flip on Redis pub/sub for horizontal fan-out — same binary, no code changes. Live chat and viewer counts over SSE with goroutines and channels.</p>
+    <div class="tags"><span>go</span><span>redis</span><span>sse</span><span>pub/sub</span></div>
+  </a>
+  <a class="proj" href="https://github.com/chiragJoshi24/django-tracekit" target="_blank" rel="noopener">
+    <span class="arr" aria-hidden="true">↗</span>
+    <h3>Django TraceKit</h3>
+    <p>Lightweight, production-safe APM for Django — a minimal alternative to django-silk. Per-request timing, CPU/memory profiling and SQL capture, runtime-configurable from Django admin behind a 3-layer cache. No redeploys.</p>
+    <div class="tags"><span>python</span><span>django</span><span>redis</span><span>observability</span></div>
+  </a>
+</section>
+
+<section class="r">
+  <h2><span>03</span> Stack</h2>
+  <dl>
+    <dt>languages</dt><dd>Python, Go, C++, JavaScript</dd>
+    <dt>backend</dt><dd>Django, DRF, FastAPI, Celery, PostgreSQL, MySQL, Redis</dd>
+    <dt>infra</dt><dd>Linux, Docker, Kubernetes, GitLab CI/CD, Kaniko</dd>
+  </dl>
+</section>
+
+<section class="r">
+  <h2><span>04</span> Background</h2>
+  <dl>
+    <dt>education</dt><dd>B.Tech CSE, MAIT Delhi <span class="mute">· 2020–24 · 8.32 CGPA</span></dd>
+    <dt>gate cs 2025</dt><dd>Qualified, top 5% <span class="mute">of 100,000+ candidates</span></dd>
+    <dt>leetcode</dt><dd>1825 rating, top 6% <span class="mute">· 750+ problems solved</span></dd>
+    <dt>off-hours</dt><dd>Music, basketball, competitive programming</dd>
+  </dl>
+</section>
+
+<section class="r">
+  <h2><span>05</span> Contact</h2>
+  <p class="cta">Have a system that needs to go faster? Let's talk.</p>
+  <a class="mail" href="mailto:chirag45610@gmail.com">chirag45610@gmail.com →</a>
+</section>
+
+<footer>
+  <span>© 2026 Chirag Joshi · New Delhi</span>
+  <span>13kb · zero js · zero deps</span>
+</footer>
+
+</main>
+</body>
+</html>
